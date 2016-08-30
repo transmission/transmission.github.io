@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link media="all" rel="stylesheet" href="../styles/TransBody.css" />
+	<title>Preferences Dialog</title>
+</head>
+<body>
+
+<!-- navigation banner -->
+<div id="mainbox">
+<A NAME="TransFAQ"></A>
+<div id="banner">
+	<div id="machelp"><a class="bread" href="../index.html">Transmission Help</a></div>
+	<div id="index"><a class="leftborder" href="../html/Index2.html">Index</a></div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+<!-- content -->
+<ul>
+<li><a href="#speed">Tab 1: Speed</a></li>
+<li><a href="#downloading">Tab 2: Downloading</a></li>
+<li><a href="#seeding">Tab 3: Seeding</a></li>
+<li><a href="#privacy">Tab 4: Privacy</a></li>
+<li><a href="#network">Tab 5: Network</a></li>
+<li><a href="#desktop">Tab 6: Desktop Integration</a></li>
+<li><a href="#remote">Tab 7: Web Access</a></li>
+</ul>
+<tr><td colspan="2"><hr/></td></tr>
+
+<!-- tab 1: speed -->
+<table width="100%">
+<tr id="speed">
+<td colspan="2"><h1>Speed</h1></td>
+</tr>
+<tr><td valign="top"><img src="../gfx/prefs-tab-1-speed.png"/></td>
+<td valign="top">
+	<h1>Speed Limits</h1>
+	<ul>
+		<li>
+			If <b>Upload</b> is checked, Transmission will limit session-wide upload speeds to this speed.
+		</li>
+		<li>
+			If <b>Download</b> is checked, Transmission will limit session-wide download speeds to this speed.
+		</li>
+		</ul>
+		<p>
+			Note that you can set specific torrents to ignore the session-wide speed limits under Torrent &gt; Properties &gt; Options.
+		</p>
+		<h1>Alternative Speed Limits</h1>
+		<p>
+			Alternative speed limits -- often called "turtle mode" -- are a second set of upload and download limits that can be set to run on a schedule and can also be toggled manually. Scheduled use is helpful if your ISP has different bandwidth caps on evenings or weekends. Manual use is helpful as a single-click way to quickly give other applications more bandwidth. You can toggle turtle mode manually by clicking the turtle button in the lower left corner of Transmission's main window.
+		</p>
+		<ul>
+		<li>
+			The <b>Upload</b> is the upload speed limit enforced when turtle mode is active.
+		</li>
+		<li>
+			The <b>Download</b> is the download speed limit enforced when turtle mode is active.
+		</li>
+		<li>
+			With <b>Scheduled times</b>, you can tell Transmission when to automatically enable and disable turtle mode.
+		</li>
+	</ul>
+</td></tr>
+<tr><td colspan="2"><hr/></td></tr>
+
+<!-- tab 2: downloading -->
+<tr id="downloading">
+<td colspan="2"><h1>Downloading</h1></td>
+</tr>
+<tr><td valign="top"><img src="../gfx/prefs-tab-2-download.png"/></td>
+<td valign="top">
+	<h1>Adding</h1>
+	<ul>
+		<li>
+			If <b>Automatically add .torrent files from</b> is checked, Transmission will monitor the selected folder for new torrent files and will automatically add them.
+		</li>
+		<li>
+			If <b>Show the Torrent Options dialog</b> is checked, Transmission will show the Torrent Options dialog when you open a new torrent. The Torrent Options dialog provides various options about the torrent that you are about to add.
+		</li>
+		<li>
+			If <b>Start added torrents</b> is checked, Transmission will automatically start downloading the newly added torrents.
+		</li>
+		<li>
+			If <b>Move .torrent file to the trash</b> is checked, Transmission will automatically move the .torrent file you opened to the trash. This is useful when you don't want to manually delete the .torrent file each time.
+		</li>
+		<li>
+			<b>Save to location</b> is referring to the folder where the downloaded files will be saved.
+		</li>
+	</ul>
+	<h1>Download Queue</h1>
+	<ul>
+		<li>
+			<b>Maximum active downloads</b> is the maximum concurrent downloads that are allowed. If more torrents than the maximum torrents are to be downloaded, they will be queued and will start as long as one of the downloading torrents completes.
+		</li>
+		<li>
+			<b>Downloads sharing data in the last N minutes are active</b> specifies the time needed to pass since the last activity of a torrent, in order for the torrent to be stalled.
+		</li>
+	</ul>
+	<h1>Incomplete</h1>
+	<ul>
+		<li>
+			If <b>Append ".part" to incomplete files' names</b> is checked, Transmission will append ".part" to the files that have not finished downloading.
+		</li>
+		<li>
+			If <b>Keep incomplete torrents in</b> is checked, Transmission will download the torrents in the specified folder until the download finishes. When the torrent is complete, Transmission will move it to the specified save location (see <b>Save to location</b> above).
+		</li>
+		<li>
+			If <b>Call script when torrent is completed</b> is checked, Transmission will call the specified script each time a torrent finishes downloading. For more information see <a href="https://trac.transmissionbt.com/wiki/Scripts#Scripts">here</a>.
+		</li>
+	</ul>
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+
+<!-- tab 3: seeding -->
+<tr id="seeding">
+<td colspan="2"><h1>Seeding</h1></td></tr>
+<tr><td valign="top"><img src="../gfx/prefs-tab-3-seed.png"/></td>
+<td valign="top">
+	<h1>Limits</h1>
+	<ul>
+		<li>
+			If <b>Stop seeding at ration</b> is checked, Transmission will stop seeding a torrent when it reaches the specified ratio. Ratio is called the ratio (upload size / download size).
+		</li>
+		<li>
+			If <b>Stop seeding if idle for N minutes</b> is checked, Transmission will stop seeding when the torrent remains idle for the specified minutes.
+		</li>
+	</ul>
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+
+<!-- tab 4: privacy -->
+<tr id="privacy">
+<td colspan="2"><h1>Privacy</h1></td></tr>
+<tr><td valign="top"><img src="../gfx/prefs-tab-4-privacy.png"/></td>
+<td valign="top">
+	<h1>Privacy</h1>
+	<ul>
+		<li>
+			<b>Encryption mode</b> refers to <a href="http://en.wikipedia.org/wiki/BitTorrent_protocol_encryption">BitTorrent Protocol Encryption</a> which can be used to improve privacy.  Encryption can cause a higher CPU load on older or underpowered systems.
+		</li>
+	</ul>
+	<h1>Blocklist</h1>
+	<ul>
+		<li>
+			A <b>Blocklist</b> is third-party list of peer addresses to block.  This can be used to block peers whose addresses are believed to belong to spyware or malware manufacturers.
+		</li>
+		<p>
+			The Transmission Project does not evaluate or endorse any specific blocklists.  If you do not know what blocklist to use, you might <a href="http://www.google.com/search?q=blocklist+url">read about some third-party blocklists</a> and evaluate them on your own.
+		</p>
+		<li>
+			If <b>Enable automatic updates</b> is enabled, Transmission will periodically refresh its copy of your blocklist from your specified URL.
+		</li>
+		<p>
+			Transmission's wiki has  <a href="http://trac.transmissionbt.com/wiki/Blocklists">more information</a> on blocklists.
+		</p>
+	</ul>
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+
+<!-- tab 5: network -->
+<tr id="network">
+<td colspan="2"><h1>Network</h1></td>
+</tr>
+<tr><td valign="top"><img src="../gfx/prefs-tab-5-network.png"/></td>
+<td valign="top">
+	<h1>Listening Port</h1>
+	<ul>
+		<li>
+			<b>Port used for incoming connections</b> is the port that the peers will use in order to connect with you.
+		</li>
+		<li>
+			<b>Test Port</b> asks transmissionbt.com to test connecting to your computer as peers would.  "Port is open" means that it succeeded; "Port is closed" means it failed.  If the test fails, you might check your port forwarding settings on your router and your OS' filewall rules.  See <a href="portforward.html">this page</a> for more information.
+		</li>
+		<li>
+			<b>Pick a random port</b> is a suggested privacy feature since it will make your open port harder to guess.  However, because it makes life understandably hard for some firewall systems, it is disabled by default.
+		</li>
+		<p>
+			If you use a router to connect your computer to the internet, you probably need to set up port forwarding on that router so that other peers will be able to connect to you.
+		</p>
+		<li>
+			If <b>Use UPnP or NAT-PMP</b> is enabled, Transmission will try to do this for you automatically.
+		</li>
+		<p>
+			Transmission will try to use those two standard protocols (via the third-party libraries <a href="http://miniupnp.free.fr/libnatpmp.html">libnatpmp</a> and <a href="http://miniupnp.free.fr/">miniupnpc</a>) to tell your router to pass incoming connections on the right port along to your computer.  This, again, is so that external BitTorrent peers can initiate a connection with you.
+		</p>
+	</ul>
+	<h1>Peer Limits</h1>
+	<ul>
+		<li>
+			<b>Maximum peers per torrent</b> limits how many peers Transmission will allow to stay connected per torrent.
+		</li>
+		<li>
+			<b>Maximum peers overall</b> limits how many peers Transmission will allow to stay connected overall.
+		</li>
+		<p>
+			These two settings are often misunderstood -- and were left out of earlier versions of Transmission for that reason -- but they can be useful if your router can not keep up with the demands of p2p.  If that happens, try lowering these numbers.
+		</p>
+		<p>
+	</ul>
+	<h1>Options</h1>
+	<ul>
+		<li>
+			<b>uTP</b>, or <a href="https://en.wikipedia.org/wiki/Micro_Transport_Protocol">Micro Transport Protocol</a> is a protocol intended to mitigate poor latency and other congestion control issues.
+		</li>
+		<li>
+			<b>PEX</b>, or <a href="http://en.wikipedia.org/wiki/Peer_exchange">Peer EXchange</a> is for sharing peer lists with your connected peers.  If you've already got one peer, this can be used to find more peers quickly.
+		</li>
+		<li>
+			<b>DHT</b>, or <a href="http://en.wikipedia.org/wiki/Distributed_hash_table">Dynamic Hash Table</a>, is another peer-finding tool.  Although sometimes slower than other methods, DHT can be extremely good at finding peers even where PEX, LPD, and trackers all fail.
+		</li>
+		<p>
+			DHT uses a Gnutella-style distributed network to find peers for you.  This means your IP address and your torrent's hashcode will be passed around the distributed network in search of a match.  Some people consider this to be a privacy hole and leave DHT turned off.
+		</p>
+		<li>
+			<b>LPD</b>, or Local Peer Discovery, is a mechanism for quickly finding other BitTorrent peers on your local network.
+		</li>
+	</ul>
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+
+<!-- tab 6: desktop -->
+<tr id="desktop">
+<td colspan="2"><h1>Desktop Integration</h1></td></tr>
+<tr><td valign="top"><img src="../gfx/prefs-tab-6-desktop.png"/></td>
+<td valign="top">
+	<h1>Desktop</h1>
+	<ul>
+		<li>
+			<b>Inhibit hibernation when torrents are active</b> will stop your desktop from hibernating for as long as you have active uploads or downloads.
+		</li>
+		<li>
+			<b>Show Transmission icon in the notification area</b> will show the Transmission's icon on the notification area. You can call basic Transmission functions from there.
+		</li>
+	</ul>
+	<h1>Notification</h1>
+	<ul>
+		<li>
+			<b>Show a notification when torrents are added</b> will pop up a notification when a torrent has been added without manual intervention (such as from a watch folder) and also when a torrent finishes downloading.
+		</li>
+		<li>
+			<b>Show a notification when torrents finish</b> will pop up a notification when a torrent has finished downloading.
+		</li>
+		<li>
+			<b>Play a sound when torrents finish</b> plays the system's "download complete" sound when a torrent finishes downloading.  This is, perhaps, a lightweight feature -- but the appeal of hearing your computer "ding!" from down the hall is undeniable. :)
+		</li>
+	</ul>
+
+</td>
+</tr>
+<tr><td colspan="2"><hr/></td></tr>
+
+<!-- tab 7: remote -->
+<tr id="remote">
+<td colspan="2"><h1>Remote</h1></td></tr>
+<tr><td valign="top"><img src="../gfx/prefs-tab-7-remote.png"/></td>
+<td valign="top">
+	<h1>Remote Control</h1>
+	<ul>
+		<li>
+			If <b>Allow remote access</b> is checked, Transmission will make accessible a web interface. From there you will be able to control your torrents.
+		</li>
+		<li>
+			<b>Open web client</b> opens the Transmission's web interface in your browser.
+		</li>
+		<li>
+			<b>HTTP port</b> refers to the local port from where the Transmission's web interface will be accessible. It is often recommended to change the default port to something random, for security reasons.
+		</li>
+		<li>
+			If <b>Use authentication</b> is checked, Transmission will ask for the <b>Username</b> and <b>Password</b> in order to allow you to access the web interface.
+		</li>
+		<li>
+			If <b>Only allow these IP adresses</b> is checked, Transmission will only allow the specified list of addresses to access the web interface. Use the <b>Remove</b> and <b>Add</b> buttons to edit the list.
+		</li>
+	</ul>
+</td>
+</tr>
+
+</table>
+
+
+</html>
