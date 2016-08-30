@@ -1,9 +1,50 @@
-<?php
-$current_page="download";
-ini_set('include_path',ini_get('include_path').':..');
-include('includes/header.php');
-include('includes/version.php');
-?>
+<html>
+<head>
+    <script type="text/javascript">
+        var current = 'download';
+    </script>
+    <title>Transmission</title>
+    <link rel="stylesheet" type="text/css" href="/includes/css/main.css">
+    <script src="/includes/js/constants.js" type="text/javascript"></script>
+    <script src="/js/js-global/jquery-1.4.3.min.js" type="text/javascript"></script>
+    <script src="/js/js-global/FancyZoom.js" type="text/javascript"></script>
+    <script src="/js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="robots" content="noarchive" />
+</head>
+
+<body>
+
+<script type="text/javascript">
+    $(function(){
+        $('#header').load('/includes/html/header.html');
+        $('#footer').load('/includes/html/footer.html');
+    });
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        var dmg = 'Transmission-' + Constants.current_version + '.dmg',
+            tar = 'transmission-' + Constants.current_version + '.tar.xz',
+            dl_base = 'https://github.com/transmission/transmission-binaries/raw/master/',
+            dl_dmg = dl_base + dmg,
+            dl_tar = dl_base + tar,
+            sum_base = 'https://www.virustotal.com/en/file/checksum/analysis',
+            sum_dmg = sum_base.replace('checksum', Constants.sha256_dmg),
+            sum_tar = sum_base.replace('checksum', Constants.sha256_tar);
+        $('#current-version').html(Constants.current_version);
+        $('#dmg-link').html('<a href="'+dl_dmg+'" title="'+Constants.sha256_dmg+'">'+dmg+'</a>');
+        $('#dmg-checksum').html(dmg+': <a href="'+sum_dmg+'">'+Constants.sha256_dmg+'</a>');
+        $('#tar-link').html('<a href="'+dl_tar+'" title="'+Constants.sha256_tar+'">'+tar+'</a>');
+        $('#tar-checksum').html(tar+': <a href="'+sum_tar+'">'+Constants.sha256_tar+'</a>');
+    });
+</script>
+
+<div id="header"></div>
+
+<div id="main">
+<div class="meat">
+
 
 <style type="text/css">
 
@@ -36,32 +77,33 @@ include('includes/version.php');
 </style>
 
 
-
 <div id="downloads">
 	<h2>Download Transmission</h2>
-	The current release version is <b><?=TRANSMISSION_VERSION?></b><br /><br />
+	The current release version is <b><span id="current-version"></span></b><br /><br />
 
 	<div>
 		<img src="/images/platforms/osx.png">
-			<b>Mac OS X</b>
-			<br /><a href="https://download.transmissionbt.com/files/Transmission-<?=TRANSMISSION_VERSION?>.dmg" title="SHA256: <?=MAC_HASH?>">Transmission-<?=TRANSMISSION_VERSION?>.dmg</a>
-			<br /><small>Requires Mac OS X 10.7 or later</small>
-			<br /><a href="https://build.transmissionbt.com/job/trunk-mac/">Nightly builds</a>
-			<br /><a href="https://trac.transmissionbt.com/wiki/PreviousReleases">Previous Releases</a>
+		<b>Mac OS X</b>
+		<br/><span id="dmg-link"></span>
+		<br/><small>Requires Mac OS X 10.7 or later</small>
+		<br/><a href="https://build.transmissionbt.com/job/trunk-mac/">Nightly builds</a>
+		<br/><a href="https://trac.transmissionbt.com/wiki/PreviousReleases">Previous Releases</a>
 	</div>
 	
 	<div>
 		<img src="/images/platforms/tarball.png">
-			<b>Source Code</b>
-	 		<br /><a href="https://download.transmissionbt.com/files/transmission-<?=TRANSMISSION_VERSION?>.tar.xz" title="SHA256: <?=tar_xz_HASH?>">transmission-<?=TRANSMISSION_VERSION?>.tar.xz</a>
-			<br /><a href="https://build.transmissionbt.com/job/trunk-linux/">Nightly tarballs</a>
-			<br /><a href="https://download.transmissionbt.com/files/">Previous tarballs</a>
-			<br /><a href="https://trac.transmissionbt.com/wiki/Building">How to build</a>
+		<b>Source Code</b>
+		<br/><span id="tar-link"></span>
+		<br/><a href="https://build.transmissionbt.com/job/trunk-linux/">Nightly tarballs</a>
+		<!--<br/><a href="https://download.transmissionbt.com/files/">Previous tarballs</a>-->
+		<br/><a href="https://trac.transmissionbt.com/wiki/Building">How to build</a>
 	</div>
-	<b>SHA256 Hashes</b><br />
-	Transmission-<?=TRANSMISSION_VERSION?>.dmg: <a href="https://www.virustotal.com/en/file/<?=MAC_HASH?>/analysis/"><?=MAC_HASH?></a><br />
-	transmission-<?=TRANSMISSION_VERSION?>.tar.xz: <a href="https://www.virustotal.com/en/file/<?=tar_xz_HASH?>/analysis/"><?=tar_xz_HASH?></a>
-	<h2 style="margin-top: 100px">Unix Distros</h2><br />
+
+	<h2 style="padding-top: 100px">SHA256 Hashes</h2>
+        <span id="dmg-checksum"></span><br/>
+        <span id="tar-checksum"></span><br/>
+
+	<h2>Unix Distros</h2><br />
 	<div>
 		<img src="/images/platforms/ubuntu.png">
 		
@@ -167,14 +209,6 @@ include('includes/version.php');
 			<b>NetBSD</b>
 			<br /><a href="ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/net/transmission/README.html">Official Packages</a>
 	</div>
-<!--	<div>
-		<img src="/images/platforms/platypux.png">
-		
-			<b>Platypux</b>
-			<br /><a href="http://platypux.site.free.fr/Lzms/transmission.sh">Official Packages</a>
-	</div> 
-	<div>
-	</div>--!>
 	
 	<h2>Embedded Systems</h2><br />
 	<div>
@@ -223,7 +257,6 @@ include('includes/version.php');
 			<b>Thecus</b>
 			<br /><a href="http://forum.thecus.com/viewtopic.php?f=2&t=767">Newest Build</a>
 	</div>
-		<div>
 		<img src="/images/platforms/memup.jpg">
 		
 			<b>MemUp LX</b>
@@ -231,8 +264,9 @@ include('includes/version.php');
 	</div>
 	<div>
 		<img src="/images/platforms/Drobo_5D_Front_Low.png">
-		<b>Drobo</b>
-		<br /><a href="http://www.drobospace.com/forums/showthread.php?tid=109145">Newest Build</a>
+
+			<b>Drobo</b>
+			<br /><a href="http://www.drobospace.com/forums/showthread.php?tid=109145">Newest Build</a>
 	</div>
 	<div>
 	</div>
@@ -243,5 +277,12 @@ include('includes/version.php');
 	<div>
 	</div>
 	&nbsp;<!-- make the white background extend to the bottom -->
-</div>
-<?php include('includes/footer.php'); ?>
+</div><!-- downloads -->
+
+</div><!-- meat -->
+</div><!-- main -->
+
+<div id="footer"/>
+
+</body>
+</html>

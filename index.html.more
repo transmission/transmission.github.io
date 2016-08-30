@@ -1,20 +1,44 @@
-<?php
-$current_page="main";
-include('includes/header.php');
-include('includes/version.php');
-?>
+<html>
+<head>
+    <title>Transmission</title>
+    <link rel="stylesheet" type="text/css" href="includes/css/main.css">
+    <script src="./includes/js/constants.js" type="text/javascript"></script>
+    <script src="./js/js-global/jquery-1.4.3.min.js" type="text/javascript"></script>
+    <script src="./js/js-global/FancyZoom.js" type="text/javascript"></script>
+    <script src="./js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="robots" content="noarchive" />
+</head>
 
-			<div style="width: 100%; height: 200px;">
- 				<div style="float: left; width: 280px; margin-top: <?php echo defined('TRANSMISSION_BETA_VERSION')?'20':'50'?>px; text-align: center; box-shadow: #888 0 0 5px; -moz-box-shadow: #888 0 0 5px; -webkit-box-shadow: #888 0 0 5px; background-image: url('images/gradient.png'); background-position: center bottom; background-repeat: repeat-x;">
+<body onload="setupZoom()">
 
-					<p><big><b>Transmission <?=TRANSMISSION_VERSION?></b></big></p>
-					<p>
-						<a href="/download">Download Now</a><br />
-						<a href="https://trac.transmissionbt.com/wiki/Changes#version-<?=TRANSMISSION_VERSION?>">Release Notes</a><br/>
-						<a href="https://trac.transmissionbt.com/wiki/PreviousReleases">Previous Releases</a>
-					</p>
+<div id="header"></div>
 
-<?php
+<script type="text/javascript">
+    $(function(){
+        $('#header').load('./includes/html/header.html');
+        $('#footer').load('./includes/html/footer.html');
+        $('#stable_title').html("<p><big><b>Transmission " + Constants.current_version + "</b></big></p>");
+        $('#stable_notes').html('<a href="https://trac.transmissionbt.com/wiki/Changes#version-' + Constants.current_version + '">Release Notes</a><br/>');
+    });
+</script>
+
+<div style="width: 100%; height: 200px;">
+
+    
+<!--FIXME: beta version
+<div style="float: left; width: 280px; margin-top: <?php echo defined('TRANSMISSION_BETA_VERSION')?'20':'50'?>px; text-align: center; box-shadow: #888 0 0 5px; -moz-box-shadow: #888 0 0 5px; -webkit-box-shadow: #888 0 0 5px; background-image: url('images/gradient.png'); background-position: center bottom; background-repeat: repeat-x;">
+-->
+<div style="float: left; width: 280px; margin-top: 50px; text-align: center; box-shadow: #888 0 0 5px; -moz-box-shadow: #888 0 0 5px; -webkit-box-shadow: #888 0 0 5px; background-image: url('images/gradient.png'); background-position: center bottom; background-repeat: repeat-x;">
+	<div id="stable_title"/>
+	<p>
+		<a href="/download">Download Now</a><br/>
+		<div id="stable_notes"/>
+		<a href="https://trac.transmissionbt.com/wiki/PreviousReleases">Previous Releases</a>
+	</p>
+</div>
+
+<!--
 if (defined('TRANSMISSION_BETA_VERSION')) {
     echo '<p><big><b>Beta Release: '.TRANSMISSION_BETA_VERSION.'</b></big></p>'
 	. '<p>'
@@ -25,8 +49,8 @@ if (defined('TRANSMISSION_BETA_VERSION')) {
 	. '<a href="https://trac.transmissionbt.com/wiki/Changes#version-'.TRANSMISSION_BETA_VERSION.'">Release Notes</a><br/>'
 	. '</p>';
 }
+-->
 
-?>
 <p>Information on <a href="http://researchcenter.paloaltonetworks.com/2016/03/new-os-x-ransomware-keranger-infected-transmission-bittorrent-client-installer/">OSX.KeRanger.A</a></p>				
 
 				</div>
@@ -71,4 +95,4 @@ if (defined('TRANSMISSION_BETA_VERSION')) {
 						Terminal
 				 	</a>
 				</div>
-<?php include('includes/footer.php'); ?>
+<div id="footer"></div>
