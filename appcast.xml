@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>Transmission Appcast</title>
-    <link>https://www.transmissionbt.com/appcast.xml</link>
+    <link>https://transmissionbt.com/appcast.xml</link>
     <description>Most recent version available.</description>
     <language>en</language>
     <pubDate>Sun, 06 Mar 2016 01:00:00 -0400</pubDate>
     
     <item>
       	<title>Transmission 2.92</title>
-      	<sparkle:releaseNotesLink>https://www.transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
       	<pubDate>Sun, 06 Mar 2016 16:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://download.transmissionbt.com/files/Transmission-2.92.dmg" 
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.92.dmg" 
       	sparkle:version="14714"
       	sparkle:shortVersionString="2.92"
       	sparkle:dsaSignature="MC0CFGaeDrmwLvNA4pTz4pBrycCeJHLgAhUAjjMUSbs+Jmd3Ew19Hhk8PrUJMxs="
@@ -22,10 +22,10 @@
     
     <item>
       	<title>Transmission 2.84</title>
-      	<sparkle:releaseNotesLink>https://www.transmissionbt.com/appcast/releasenotes106.html</sparkle:releaseNotesLink>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes106.html</sparkle:releaseNotesLink>
       	<pubDate>Mon, 30 Jun 2014 23:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://download.transmissionbt.com/files/Transmission-2.84.dmg" 
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.84.dmg" 
       	sparkle:version="14306"
       	sparkle:shortVersionString="2.84"
       	sparkle:dsaSignature="MCwCFAjRhM3MLlYeMjYUw2/MsX21ugDnAhQvb6lINvb+3bNKwmQcanivp2qlmw=="
@@ -35,10 +35,10 @@
 
     <item>
       	<title>Transmission 2.42</title>
-      	<sparkle:releaseNotesLink>https://www.transmissionbt.com/appcast/releasenotes105.html</sparkle:releaseNotesLink>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes105.html</sparkle:releaseNotesLink>
       	<pubDate>Wed, 19 Oct 2011 22:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://download.transmissionbt.com/files/Transmission-2.42.dmg" 
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.42.dmg" 
       	sparkle:version="13013"
       	sparkle:shortVersionString="2.42"
       	sparkle:dsaSignature="MC0CFQCVkkE30+qNQnk1zgdk738dVS6uVAIULSWcTiOel2JfqTCreDy1J8UgTi4="
@@ -48,10 +48,10 @@
 
     <item>
       	<title>Transmission 1.54</title>
-      	<sparkle:releaseNotesLink>https://www.transmissionbt.com/appcast/releasenotes104.html</sparkle:releaseNotesLink>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes104.html</sparkle:releaseNotesLink>
       	<pubDate>Thu, 04 June 2009 20:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://download.transmissionbt.com/files/Transmission-1.54.dmg" 
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-1.54.dmg" 
       	sparkle:version="8615"
       	sparkle:shortVersionString="1.54"
       	sparkle:dsaSignature="MCwCFCfR8NXqspNkW4xCtFWXLLE8OegiAhR28nofs7rwHU5gSNRZzg40PBvJYw=="
