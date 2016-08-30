@@ -158,21 +158,27 @@ a:hover {
 }
 
 #FooterBody {
-  margin-top: 20px;
+  margin-top: 10px;
   width: inherit;
   text-align: center;
-  font-size: 0.7em;
+  font-size: small;
   z-index: 200;
-  color: #917575;
+  color: #B0BBBB;
   text-shadow: none;
 }
-
 #FooterBody a {
-  color: #918181;
+  color: #F0FFFF;
+}
+#FooterBody a:hover {
+  text-decoration: underline;
 }
 
-#FooterBody a:hover {
-  color: #c2c2c2;
+#FooterBody #Credits {
+  font-size: x-small;
+  color: #808888;
+}
+#FooterBody #Credits a {
+  color: #808888;
 }
 
 #Donate {
