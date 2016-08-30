@@ -1,9 +1,29 @@
-<?php
-$current_page="about";
-ini_set('include_path',ini_get('include_path').':..');
-include('includes/header.php');
-include('includes/version.php');
-?>
+<!-- begin top boilerplate -->
+<html>
+<head>
+    <script type="text/javascript">
+        var current = 'about';
+    </script>
+    <title>Transmission</title>
+    <link rel="stylesheet" type="text/css" href="/includes/css/main.css">
+    <script src="/includes/js/constants.js" type="text/javascript"></script>
+    <script src="/js/js-global/jquery-1.4.3.min.js" type="text/javascript"></script>
+    <script src="/js/js-global/FancyZoom.js" type="text/javascript"></script>
+    <script src="/js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="robots" content="noarchive" />
+</head>
+<body>
+<script type="text/javascript">
+    $(function(){
+        $('#header').load('/includes/html/header.html');
+        $('#footer').load('/includes/html/footer.html');
+    });
+</script>
+<div id="header"></div>
+<div id="main">
+<div class="meat">
+<!-- end top boilerplate -->
 
 <p>Transmission is a cross-platform <a href="https://en.wikipedia.org/wiki/BitTorrent_%28protocol%29">BitTorrent</a> client that is:</p>
 
@@ -53,4 +73,10 @@ ship with Transmission.  When Belkin and Vuze Inc. partnered to write a <q><a hr
 <h3>Powerful.</h3>
 <p>Transmission has the features you want from a BitTorrent client: <a href="https://en.wikipedia.org/wiki/BitTorrent_protocol_encryption">encryption</a>, a web interface, <a href="https://en.wikipedia.org/wiki/Peer_exchange">peer exchange</a>, <a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme">magnet links</a>, <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">DHT</a>, <a href="https://en.wikipedia.org/wiki/Micro_Transport_Protocol">µTP</a>, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</p>
 
-<?php include('includes/footer.php'); ?>
+<!-- begin bottom boilerplate -->
+</div><!-- meat -->
+</div><!-- main -->
+<div id="footer"></div>
+</body>
+</html>
+<!-- end bottom boilerplate -->
