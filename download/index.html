@@ -1,3 +1,4 @@
+<!-- begin top boilerplate -->
 <html>
 <head>
     <script type="text/javascript">
@@ -12,15 +13,17 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta name="robots" content="noarchive" />
 </head>
-
 <body>
-
 <script type="text/javascript">
     $(function(){
         $('#header').load('/includes/html/header.html');
         $('#footer').load('/includes/html/footer.html');
     });
 </script>
+<div id="header"></div>
+<div id="main">
+<div class="meat">
+<!-- end top boilerplate -->
 
 <script type="text/javascript">
     $(function(){
@@ -39,11 +42,6 @@
         $('#tar-checksum').html(tar+': <a href="'+sum_tar+'">'+Constants.sha256_tar+'</a>');
     });
 </script>
-
-<div id="header"></div>
-
-<div id="main">
-<div class="meat">
 
 
 <style type="text/css">
@@ -279,10 +277,10 @@
 	&nbsp;<!-- make the white background extend to the bottom -->
 </div><!-- downloads -->
 
+<!-- begin bottom boilerplate -->
 </div><!-- meat -->
 </div><!-- main -->
-
-<div id="footer"/>
-
+<div id="footer"></div>
 </body>
 </html>
+<!-- end bottom boilerplate -->
