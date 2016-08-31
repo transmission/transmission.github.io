@@ -1,0 +1,44 @@
+<!-- begin top boilerplate -->
+<html>
+<head>
+    <title>Transmission</title>
+    <link rel="stylesheet" type="text/css" href="/includes/css/main.css">
+    <script src="/includes/js/constants.js" type="text/javascript"></script>
+    <script src="/js/js-global/jquery-1.4.3.min.js" type="text/javascript"></script>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="robots" content="noarchive" />
+</head>
+<body>
+<script type="text/javascript">
+    $(function(){
+        $('#header').load('/includes/html/header.html');
+        $('#footer').load('/includes/html/footer.html');
+    });
+</script>
+<div id="header"></div>
+<div id="main">
+<div class="meat">
+<!-- end top boilerplate -->
+
+<h2>Q. What happened?</h2>
+<h2>A. It appears that on or about August 28, 2016, unauthorized access was gained to our website server.  The official Mac version of Transmission 2.92 was replaced with an unauthorized version that contained the OSX/Keydnap malware.  The infected file was available for download somewhere between a few hours and less than a day.  Additional information about the malware is available <a href="http://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/">here</a> and <a href="http://www.welivesecurity.com/2016/07/06/new-osxkeydnap-malware-hungry-credentials/">here</a>.</h2>
+
+<h2>Q. What steps have been taken following the incident?</h2>
+<h2>A. The infected file was removed from the server immediately upon discovering its existence, which was less than 24 hours after the file was posted to the website.  To help prevent future incidents, we have migrated the website and all binary files from our current servers to <a href="https://github.com/transmission">GitHub</a>. Other services, which are currently unavailable, will be migrated to new servers in the coming days.  As an added precaution, we will be hosting the binaries and the website (including checksums) in two separate repositories.</h2>
+
+<h2>Q. Am I at risk?</h2>
+<h2>A. The infected file was available for download from our website for less than a day, and the file was not available through the auto-update mechanism.  Steps to check for, and remove, an infection are <a href="http://transmissionbt.com/keydnap_removal/">available here.</a></h2>
+
+<h2>Q. Can you share any more information about this incident?</h2>
+<h2>A.  We are in the process of investigating the incident and will share any relevant information that we discover here. </h2>
+<br>
+<h2>If you have any questions or information about the incident, please send an email to security@transmissionbt.com.</h2>
+
+
+<!-- begin bottom boilerplate -->
+</div><!-- meat -->
+</div><!-- main -->
+<div id="footer"></div>
+</body>
+</html>
+<!-- end bottom boilerplate -->
