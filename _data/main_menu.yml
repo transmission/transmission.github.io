@@ -1,0 +1,26 @@
+main:
+  title: Main
+  url: /
+about:
+  title: About
+  url: /about/
+download:
+  title: Download
+  url: /download/
+devel:
+  title: Development
+  url: https://github.com/transmission/transmission
+  external: true
+resources:
+  title: Add-Ons
+  url: /resources/
+irc:
+  title: IRC
+  url: irc://irc.freenode.net/transmission
+  external: true
+  align: right
+support:
+  title: Support
+  url: https://forum.transmissionbt.com
+  external: true
+  align: right

@@ -1,0 +1,25 @@
+mac:
+  title: Mac
+  large_url: /images/screenshots/Mac-Large.png
+  thumbnail_url: /images/screenshots/Mac-Thumbnail.png
+  thumbnail_alt: Mac Screenshot Thumbnail
+gtk:
+  title: GTK+
+  large_url: /images/screenshots/GTK-Large.jpg
+  thumbnail_url: /images/screenshots/GTK-Thumbnail.jpg
+  thumbnail_alt: GTK+ Screenshot Thumbnail
+qt:
+  title: Qt
+  large_url: /images/screenshots/Qt-Large.jpg
+  thumbnail_url: /images/screenshots/Qt-Thumbnail.jpg
+  thumbnail_alt: Qt Screenshot Thumbnail
+web:
+  title: Web Client
+  large_url: /images/screenshots/Clutch-Large.jpg
+  thumbnail_url: /images/screenshots/Clutch-Thumbnail.jpg
+  thumbnail_alt: Web Client Screenshot Thumbnail
+terminal:
+  title: Terminal
+  large_url: /images/screenshots/Curses-Large.jpg
+  thumbnail_url: /images/screenshots/Curses-Thumbnail.jpg
+  thumbnail_alt: Curses Screenshot Thumbnail

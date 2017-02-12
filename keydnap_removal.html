@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /keydnap_removal/
+---
+
+<h2>Keydnap v1.5 Removal &mdash; Courtesy of ESET</h2>
+
+<h3>Start by quitting Transmission. Then, in Activity Monitor, kill processes with any of the following names:</h3>
+<ul>
+    <li>icloudproc</li>
+    <li>License.rtf</li>
+    <li>icloudsyncd</li>
+    <li>/usr/libexec/icloudsyncd -launchd netlogon.bundle</li>
+</ul>
+
+<h3>Remove the following files and directories:</h3>
+<ul>
+    <li>/Library/Application Support/com.apple.iCloud.sync.daemon/</li>
+    <li>/Library/LaunchAgents/com.apple.iCloud.sync.daemon.plist</li>
+    <li>/Users/$USER/Library/Application Support/com.apple.iCloud.sync.daemon/</li>
+    <li>/Users/$USER/Library/Application Support/com.geticloud/</li>
+    <li>/Users/$USER/Library/LaunchAgents/com.apple.iCloud.sync.daemon.plist</li>
+    <li>/Users/$USER/Library/LaunchAgents/com.geticloud.icloud.photo.plist</li>
+</ul>
+
+<h3>Remove Transmission from your system and redownload it from a trusted source. The Transmission website and binaries are now hosted on Github. You can verify the hash and the signature of the legitimate binary package with:</h3>
+<ul>
+    <li>"shasum -a 256" and compare with the one on the site and</li>
+    <li>"codesign -dvvv" and verify if is signed by "Digital Ignition LLC" with team identifier 5DPYRBHEAR.</li>
+</ul>

@@ -1,0 +1,18 @@
+<header class="site-header">
+    <div class="meat">
+        <h1><span>Transmission</span></h1>
+        <div id="tagline"><span>A Fast, Easy, and Free BitTorrent Client</span></div>
+        <div id="gearshift"></div>
+        <div id="nav">
+            <ul>
+            {% for mm in site.data.main_menu %}
+                {% assign id = mm[0] %}
+                {% assign item = mm[1] %}
+                <li{% if item.align == "right" %} style="float: right;"{% endif %}>
+                    <a id="header-{{ id }}" href="{% unless item.external %}{{ site.baseurl }}{% endunless %}{{ item.url }}"{% if page.menu_id == id %} class="current"{% endif %}>{{ item.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,95 @@
+- name: Ubuntu
+  logo_url: /images/platforms/ubuntu.png
+  links:
+    - title: Stable
+      url: https://launchpad.net/ubuntu/saucy/+source/transmission/2.82-0ubuntu1
+    - title: More info
+      url: https://forum.transmissionbt.com/viewtopic.php?t=5604
+- name: Fedora
+  logo_url: /images/platforms/fedora.png
+  links:
+    - title: Official Packages
+      url: https://admin.fedoraproject.org/pkgdb/acls/name/transmission
+  install_cmd: yum install transmission
+- name: OpenSUSE
+  logo_url: /images/platforms/opensuse.png
+  links:
+    - title: Official Packages
+      url: http://software.opensuse.org/search?baseproject=openSUSE:11.3&q=transmission
+- name: Mandriva
+  logo_url: /images/platforms/mandriva.png
+  links:
+    - title: Mandriva Wiki
+      url: http://wiki.mandriva.com/fr/Transmission
+  install_cmd: urpmi transmission
+- name: CentOS
+  logo_url: /images/platforms/centos.png
+  links:
+    - title: Contrib Packages
+      url: http://geekery.altervista.org/dokuwiki/doku.php
+- name: Debian
+  logo_url: /images/platforms/debian.png
+  links:
+    - title: Official Packages
+      url: https://packages.debian.org/search?searchon=names&keywords=transmission
+  install_cmd: apt-get install transmission
+- name: Puppy
+  logo_url: /images/platforms/puppy.png
+  links:
+    - title: .pet Packages
+      url: http://www.murga-linux.com/puppy/viewtopic.php?t=38969
+- name: Arch Linux
+  logo_url: /images/platforms/arch-linux.png
+  links:
+    - title: Official Packages
+      url: https://www.archlinux.org/packages/?q=transmission
+- name: Slackware
+  logo_url: /images/platforms/slackware.png
+  links:
+#    - title: Official Packages
+#      url: http://www.linuxpackages.net/search_view.php?by=name&name=transmission
+    - title: Newer Packages
+      url: http://www.slacky.eu/asche/pkgs/index.php?sear=transmission
+- name: FreeBSD
+  logo_url: /images/platforms/freebsd.png
+  links:
+    - title: Official Packages
+      url: https://www.freebsd.org/cgi/ports.cgi?query=transmission&stype=name&sektion=net-p2p
+    - title: Fresh Ports
+      url: http://www.freshports.org/net-p2p/transmission-gtk2/
+- name: Gentoo
+  logo_url: /images/platforms/gentoo.png
+  links:
+    - title: Official Packages
+      url: https://packages.gentoo.org/package/net-p2p/transmission
+- name: Pardus
+  logo_url: /images/platforms/pardus.png
+  links:
+    - title: Official Packages
+      url: http://packages.pardus.org.tr/info/contrib/2009/stable/source/transmission.html
+  install_cmd: sudo pisi it transmission
+#- name: Foresight
+#  logo_url: /images/platforms/foresight.png
+#  links:
+#    - title: Official Packages
+#      url: http://www.rpath.org/repos/foresight/troveInfo?t=transmission
+#  install_cmd: conary update transmission
+- name: OpenBSD
+  logo_url: /images/platforms/openbsd.png
+  links:
+    - title: Official Packages
+      url: https://www.google.com/search?q=transmission&domains=www.openbsd.org&sitesearch=www.openbsd.org
+#- name: Solaris
+#  logo_url: /images/platforms/solaris.png
+#  links:
+#    - title: Official Packages
+#      url: http://pkg.opensolaris.org/release/en/advanced_search.shtml?token=transmission&show=p
+#    - title: Contrib packages
+#      url: http://trisk.acm.jhu.edu/SFE/
+#      comment: README
+#      comment_url: http://pkgbuild.sourceforge.net/spec-files-extra
+- name: NetBSD
+  logo_url: /images/platforms/netbsd.png
+  links:
+    - title: Official Packages
+      url: ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/net/transmission/README.html

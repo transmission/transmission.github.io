@@ -1,0 +1,28 @@
+title: Transmission
+email:
+  info: info@transmissionbt.com
+  security: security@transmissionbt.com
+  donations: donations@transmissionbt.com
+
+github:
+  organization_url: https://github.com/transmission
+  releases_url: https://github.com/transmission/transmission/releases
+  tarballs_repo_url: https://github.com/transmission/transmission-releases
+  tarballs_url: https://github.com/transmission/transmission-releases/raw/master
+  wiki_url: https://github.com/transmission/transmission/wiki
+
+collections:
+  redirects:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      type: redirects
+    values:
+      layout: redirect
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - appcast/sparkle_sign_update.rb

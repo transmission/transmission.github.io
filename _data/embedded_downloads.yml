@@ -1,0 +1,53 @@
+- name: Networked Media Tank
+  logo_url: /images/platforms/networked-media-tank.png
+  links:
+    - title: Newest Build
+      url: http://www.networkedmediatank.com/showthread.php?tid=10662&page=1
+    - title: Forum Help
+      url: http://www.networkedmediatank.com/forumdisplay.php?fid=64
+- name: WD MyBook
+  logo_url: /images/platforms/wd-mybook.png
+  links:
+    - title: Optware Package
+      url: http://mybookworld.wikidot.com/forum/t-162908/transmission-1-72
+    - title: Forum Help
+      url: http://mybookworld.wikidot.com/forum/c-34400/torrent-programs
+- name: ReadyNAS
+  logo_url: /images/platforms/netgear-readynas.png
+  links:
+    - title: Newest Build
+      url: http://www.readynas.com/forum/viewtopic.php?t=24271
+    - title: Forum Help
+      url: http://www.readynas.com/forum/viewtopic.php?t=27242&start=240
+- name: D-Link DNS-323 & CH3SNAS
+  logo_url: /images/platforms/dns-323.png
+  links:
+    - title: Newest Build
+      url: http://forum.dsmg600.info/t2719-%5BREL%5D-Transmission.html
+- name: Synology
+  logo_url: /images/platforms/synology.png
+  links:
+    - title: Newest Build
+      url: https://synocommunity.com/package/transmission
+    - title: Support Forum
+      url: https://forum.synology.com/enu/viewforum.php?f=38
+- name: IP Box 9000
+  logo_url: /images/platforms/ip-box-9000.png
+  links:
+    - title: Newest Build
+      url: http://www.sat-universe.com/showthread.php?t=123931&page=2
+- name: Thecus
+  logo_url: /images/platforms/thecus.png
+  links:
+    - title: Newest Build
+      url: http://forum.thecus.com/showthread.php?tid=9863
+- name: MemUp LX
+  logo_url: /images/platforms/memup.jpg
+  links:
+    - title: Newest Build
+      url: http://www.rastersoft.com/programas/ftp_bt4lxmedia.html
+- name: Drobo
+  logo_url: /images/platforms/Drobo_5D_Front_Low.png
+  links:
+    - title: Newest Build
+      url: http://www.drobospace.com/forums/showthread.php?tid=109145

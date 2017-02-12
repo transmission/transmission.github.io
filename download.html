@@ -1,0 +1,86 @@
+---
+layout: default
+permalink: /download/
+menu_id: download
+---
+
+{% assign stable_release = site.data.releases.stable %}
+
+{% capture dmg_file %}Transmission-{{ stable_release.version }}.dmg{% endcapture %}
+{% capture tar_file %}transmission-{{ stable_release.version }}.tar.xz{% endcapture %}
+{% capture msi32_file %}transmission-{{ stable_release.version }}-x86.msi{% endcapture %}
+{% capture msi64_file %}transmission-{{ stable_release.version }}-x64.msi{% endcapture %}
+
+<div id="downloads">
+
+    <h2>Download Transmission</h2>
+    The current release version is <b>{{ stable_release.version }}</b><br /><br />
+
+    <div>
+        <img src="{{ site.baseurl }}/images/platforms/osx.png">
+        <b>Mac OS X</b>
+        <br/>{% include github_release_file_link.html file=dmg_file sha256=stable_release.sha256_dmg %}
+        <br/><small>Requires Mac OS X 10.7 or later</small>
+        <br/><a href="https://build.transmissionbt.com/job/trunk-mac/">Nightly builds</a>
+        <br/><a href="{{ site.github.wiki_url }}/Previous-Releases">Previous Releases</a>
+    </div>
+
+    <div>
+        <img src="{{ site.baseurl }}/images/platforms/tarball.png">
+        <b>Source Code</b>
+        <br/>{% include github_release_file_link.html file=tar_file sha256=stable_release.sha256_tar %}
+        <br/><a href="https://build.transmissionbt.com/job/trunk-linux/">Nightly tarballs</a>
+        <br/><a href="{{ site.github.tarballs_repo_url }}">Previous tarballs</a>
+        <br/><a href="{{ site.github.wiki_url }}/Building-Transmission">How to build</a>
+    </div>
+
+    <div>
+        <img src="{{ site.baseurl }}/images/platforms/windows.png">
+        <b>Windows (early preview)</b>
+        <br/>{% include github_release_file_link.html file=msi32_file sha256=stable_release.sha256_msi32 %}
+        <br/>{% include github_release_file_link.html file=msi64_file sha256=stable_release.sha256_msi64 %}
+        <br/><small>Requires Windows 7 or later</small>
+        <br/><a href="https://build.transmissionbt.com/job/trunk-win32/">Nightly builds</a>
+    </div>
+
+    <div></div>
+
+    <h2 style="padding-top: 100px">SHA256 Hashes</h2>
+    {{ dmg_file }}: {% include virustotal_analysis_link.html sha256=stable_release.sha256_dmg %}<br/>
+    {{ tar_file }}: {% include virustotal_analysis_link.html sha256=stable_release.sha256_tar %}<br/>
+    {{ msi32_file }}: {% include virustotal_analysis_link.html sha256=stable_release.sha256_msi32 %}<br/>
+    {{ msi64_file }}: {% include virustotal_analysis_link.html sha256=stable_release.sha256_msi64 %}<br/>
+
+    <h2>Unix Distros</h2><br />
+
+    {% for dl in site.data.unix_downloads %}
+    <div>
+        <img src="{{ site.baseurl }}{{ dl.logo_url }}">
+        <b>{{ dl.name }}</b>
+        {% for link in dl.links %}
+        <br /><a href="{{ link.url | xml_escape }}">{{ link.title }}</a>
+        {% if link.comment %}
+        <small><i>(<a href="{{ link.comment_url | xml_escape }}">{{ link.comment }}</a>)</i></small>
+        {% endif %}
+        {% endfor %}
+        {% if dl.install_cmd %}
+        <br /><small><code>$ {{ dl.install_cmd }}</code></small>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    <h2>Embedded Systems</h2><br />
+
+    {% for dl in site.data.embedded_downloads %}
+    <div>
+        <img src="{{ site.baseurl }}{{ dl.logo_url }}">
+        <b>{{ dl.name }}</b>
+        {% for link in dl.links %}
+        <br /><a href="{{ link.url | xml_escape }}">{{ link.title }}</a>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div></div>&nbsp; <!-- make the white background extend to the bottom -->
+
+</div><!-- downloads -->

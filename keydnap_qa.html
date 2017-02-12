@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /keydnap_qa/
+---
+
+<h3>Q. What happened?</h3>
+<p>A. It appears that on or about August 28, 2016, unauthorized access was gained to our website server.  The official Mac version of Transmission 2.92 was replaced with an unauthorized version that contained the OSX/Keydnap malware.  The infected file was available for download somewhere between a few hours and less than a day.  Additional information about the malware is available <a href="http://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/">here</a> and <a href="http://www.welivesecurity.com/2016/07/06/new-osxkeydnap-malware-hungry-credentials/">here</a>.</p>
+
+<h3>Q. What steps have been taken following the incident?</h3>
+<p>A. The infected file was removed from the server immediately upon discovering its existence, which was less than 24 hours after the file was posted to the website.  To help prevent future incidents, we have migrated the website and all binary files from our current servers to <a href="{{ site.github.organization_url }}">GitHub</a>. Other services, which are currently unavailable, will be migrated to new servers in the coming days.  As an added precaution, we will be hosting the binaries and the website (including checksums) in two separate repositories.</p>
+
+<h3>Q. Am I at risk?</h3>
+<p>A. The infected file was available for download from our website for less than a day, and the file was not available through the auto-update mechanism.  Steps to check for, and remove, an infection are <a href="{{ site.baseurl }}{% link keydnap_removal.html %}">available here.</a></p>
+
+<h3>Q. Can you share any more information about this incident?</h3>
+<p>A.  We are in the process of investigating the incident and will share any relevant information that we discover here. </p>
+
+<br>
+
+<h3>If you have any questions or information about the incident, please send an email to {{ site.email.security }}.</h3>
