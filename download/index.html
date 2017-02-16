@@ -27,17 +27,27 @@
     $(function(){
         var dmg = 'Transmission-' + Constants.current_version + '.dmg',
             tar = 'transmission-' + Constants.current_version + '.tar.xz',
+            msi32 = 'transmission-' + Constants.current_version + '-x86.msi',
+            msi64 = 'transmission-' + Constants.current_version + '-x64.msi',
             dl_base = 'https://github.com/transmission/transmission-releases/raw/master/',
             dl_dmg = dl_base + dmg,
             dl_tar = dl_base + tar,
+            dl_msi32 = dl_base + msi32,
+            dl_msi64 = dl_base + msi64,
             sum_base = 'https://www.virustotal.com/en/file/checksum/analysis',
             sum_dmg = sum_base.replace('checksum', Constants.sha256_dmg),
-            sum_tar = sum_base.replace('checksum', Constants.sha256_tar);
+            sum_tar = sum_base.replace('checksum', Constants.sha256_tar),
+            sum_msi32 = sum_base.replace('checksum', Constants.sha256_msi32),
+            sum_msi64 = sum_base.replace('checksum', Constants.sha256_msi64);
         $('#current-version').html(Constants.current_version);
         $('#dmg-link').html('<a href="'+dl_dmg+'" title="'+Constants.sha256_dmg+'">'+dmg+'</a>');
         $('#dmg-checksum').html(dmg+': <a href="'+sum_dmg+'">'+Constants.sha256_dmg+'</a>');
         $('#tar-link').html('<a href="'+dl_tar+'" title="'+Constants.sha256_tar+'">'+tar+'</a>');
         $('#tar-checksum').html(tar+': <a href="'+sum_tar+'">'+Constants.sha256_tar+'</a>');
+        $('#msi32-link').html('<a href="'+dl_msi32+'" title="'+Constants.sha256_msi32+'">'+msi32+'</a>');
+        $('#msi32-checksum').html(msi32+': <a href="'+sum_msi32+'">'+Constants.sha256_msi32+'</a>');
+        $('#msi64-link').html('<a href="'+dl_msi64+'" title="'+Constants.sha256_msi64+'">'+msi64+'</a>');
+        $('#msi64-checksum').html(msi64+': <a href="'+sum_msi64+'">'+Constants.sha256_msi64+'</a>');
     });
 </script>
 
@@ -45,7 +55,7 @@
 <style type="text/css">
 
 #downloads {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -95,9 +105,22 @@
 		<br/><a href="https://github.com/transmission/transmission/wiki/Building-Transmission">How to build</a>
 	</div>
 
+	<div>
+		<img src="/images/platforms/windows.png">
+		<b>Windows (early preview)</b>
+		<br/><span id="msi32-link"></span>
+		<br/><span id="msi64-link"></span>
+		<br/><small>Requires Windows 7 or later</small>
+		<br/><a href="https://build.transmissionbt.com/job/trunk-win32/">Nightly builds</a>
+	</div>
+
+	<div></div>
+
 	<h2 style="padding-top: 100px">SHA256 Hashes</h2>
         <span id="dmg-checksum"></span><br/>
         <span id="tar-checksum"></span><br/>
+        <span id="msi32-checksum"></span><br/>
+        <span id="msi64-checksum"></span><br/>
 
 	<h2>Unix Distros</h2><br />
 	<div>
