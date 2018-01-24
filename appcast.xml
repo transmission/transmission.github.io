@@ -5,17 +5,17 @@
     <link>https://transmissionbt.com/appcast.xml</link>
     <description>Most recent version available.</description>
     <language>en</language>
-    <pubDate>Sun, 06 Mar 2016 01:00:00 -0400</pubDate>
+    <pubDate>Wed, 24 Jan 2018 16:00:00 -0400</pubDate>
     
     <item>
-      	<title>Transmission 2.92</title>
+      	<title>Transmission 2.93</title>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
-      	<pubDate>Sun, 06 Mar 2016 16:00:00 -0400</pubDate>
+      	<pubDate>Wed, 24 Jan 2018 16:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.92.dmg" 
-      	sparkle:version="14714"
-      	sparkle:shortVersionString="2.92"
-      	sparkle:dsaSignature="MC0CFGaeDrmwLvNA4pTz4pBrycCeJHLgAhUAjjMUSbs+Jmd3Ew19Hhk8PrUJMxs="
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.93.dmg"
+      	sparkle:version="3c5870d4f5"
+      	sparkle:shortVersionString="2.93"
+      	sparkle:dsaSignature="MCwCFBy7liTDKAMLtQJmU8fkQ4UGavdeAhQfcFjFQdExhHkg0s8sItcvndQrMw=="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
     </item>
