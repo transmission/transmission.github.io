@@ -43,7 +43,7 @@
 					<td valign="top" width="250"><a href="../gfx/open.png" target="_blank"><img title="Click to enlarge" src="../gfx/open.png" height="auto" width="250" border="0"></a></td>
 					<td valign="top">
 						<p>
-							Download your file's associated 'torrent file' (extension .torrent). These are commonly found at <a href="http://en.wikipedia.org/wiki/BitTorrent_tracker">'tracker' websites</a>.
+							Download your file's associated 'torrent file' (extension .torrent). These are commonly found at <a href="https://en.wikipedia.org/wiki/BitTorrent_tracker">'tracker' websites</a>.
 						</p>
 						<p>
 							Once you have the torrent file, click Open and select it, or simply drag it into Transmission - downloading should start immediately.
@@ -74,13 +74,31 @@
 					<td valign="top" width="250"><a href="../gfx/creation.png" target="_blank"><img title="Click to enlarge" src="../gfx/creation.png" height="auto" width="250" border="0"></a></td>
 					<td valign="top">
 						<p>
-							Yes, choose 'New...' under the 'File' menu.
+							Yes, choose 'New...' under the 'File' menu and when the 'New Torrent' dialogue opens:
 						</p>
 						<p>
-							When the dialogue box appears, choose your file/folder and enter your tracker address, comments and private status.
+							1) Pull down 'Save To:' and select a folder where you want your new .torrent specification file to be created.  (You can move it later if you want.)
 						</p>
 						<p>
-							Once you are done, click 'New'. Transmission will automatically optimize the torrent file for what you are sharing.
+							2) To share (i.e. transmit) an entire folder of files choose 'Source folder:' and select a folder.  All files in that folder will be shared in the torrent.  
+							Alternatively to share a single file choose 'Source file:' and select a filename.
+						</p>
+						<p>			
+							3) Enter the URL of one or more Trackers that you have permission to use.  Their address will look something like this: (http//domain:portnumber/announce).
+							(Trackers are web services that track the distribution of your files and offer services to make the sharing happen.  
+							You will need at least one reference to a torrent tracker.  This can be added and adjusted later in the torrent properties window under the Trackers tab.)
+						</p>
+						<p>							
+							4) Optionally enter a 'Comment' to be attached to the torrent. [TODO Say who gets this this comment (public or private?)]
+						</p>
+						<p>
+							5) Optionally check the 'Private' torrent box. [TODO Say what this check mark does (or perhaps this is to make the comment public or private?]
+						</p>
+						<p>
+							Once you are done be sure to click 'New'. 
+							If you click 'Close' it will cancel the operation.
+							Transmission will automatically optimize the torrent file for what you are sharing. 
+							
 						</p>
 					</td>
 				</tr>
