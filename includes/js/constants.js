@@ -4,7 +4,9 @@ var Constants = {
     sha256_tar: "35442cc849f91f8df982c3d0d479d650c6ca19310a994eccdaa79a4af3916b7d",
     sha256_msi32: "9083bed824d707e8791f53811aaa88def8047d40f221a8e823571c103cf3aff6",
     sha256_msi64: "a35672252661f16382072fd0ae87b8eafd47f5535439336fe2f161a542f9a1ab",
-    current_version: "2.94"
+    current_version_mac: "2.94"
+    current_version_win: "2.94"
+    current_version_linux: "2.94"
     // Uncomment this for beta versions 
     // , beta_version: "2.60b1"
 }
