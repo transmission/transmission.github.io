@@ -7,7 +7,9 @@ var Constants = {
     current_version: "2.94",
     current_version_dmg: "2.94",
     current_version_msi: "2.94",
-    current_version_tar: "2.94"
+    current_version_tar: "2.94",
+    min_req_dmg: "Mac OS X 10.10 or higher",
+    min_req_msi: "Windows 7"
     // Uncomment this for beta versions 
     // , beta_version: "2.60b1"
 }
