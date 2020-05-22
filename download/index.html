@@ -39,7 +39,7 @@
             sum_tar = sum_base.replace('checksum', Constants.sha256_tar),
             sum_msi32 = sum_base.replace('checksum', Constants.sha256_msi32),
             sum_msi64 = sum_base.replace('checksum', Constants.sha256_msi64);
-        $('#current-version').html(Constants.current_version);
+        $('#current-version').text(Constants.current_version);
         $('#dmg-link').html('<a href="'+dl_dmg+'" title="'+Constants.sha256_dmg+'">'+dmg+'</a>');
         $('#dmg-checksum').html(dmg+': <a href="'+sum_dmg+'">'+Constants.sha256_dmg+'</a>');
         $('#tar-link').html('<a href="'+dl_tar+'" title="'+Constants.sha256_tar+'">'+tar+'</a>');
@@ -48,6 +48,8 @@
         $('#msi32-checksum').html(msi32+': <a href="'+sum_msi32+'">'+Constants.sha256_msi32+'</a>');
         $('#msi64-link').html('<a href="'+dl_msi64+'" title="'+Constants.sha256_msi64+'">'+msi64+'</a>');
         $('#msi64-checksum').html(msi64+': <a href="'+sum_msi64+'">'+Constants.sha256_msi64+'</a>');
+        $('#min-req-dmg').text(Constants.min_req_dmg);
+        $('#min-req-msi').text(Constants.min_req_msi);
     });
 </script>
 
@@ -91,7 +93,7 @@
 		<img src="/images/platforms/osx.png">
 		<b>Mac OS X</b>
 		<br/><span id="dmg-link"></span>
-		<br/><small>Requires Mac OS X 10.7 or later</small>
+		<br/><small><span id="min-req-dmg"/></small>
 		<br/><a href="https://build.transmissionbt.com/job/trunk-mac/">Nightly builds</a>
 		<br/><a href="https://github.com/transmission/transmission/wiki/Previous-Releases">Previous Releases</a>
 	</div>
@@ -110,7 +112,7 @@
 		<b>Windows (early preview)</b>
 		<br/><span id="msi32-link"></span>
 		<br/><span id="msi64-link"></span>
-		<br/><small>Requires Windows 7 or later</small>
+		<br/><small><span id="min-req-msi"/></small>
 		<br/><a href="https://build.transmissionbt.com/job/trunk-win32/">Nightly builds</a>
 	</div>
 

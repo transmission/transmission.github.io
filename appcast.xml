@@ -5,11 +5,24 @@
     <link>https://transmissionbt.com/appcast.xml</link>
     <description>Most recent version available.</description>
     <language>en</language>
-    <pubDate>Tue, 1 May 2018 16:00:00 -0400</pubDate>
+    <pubDate>Fri, 15 May 2020 20:00:00 -0400</pubDate>
+    
+    <item>
+      	<title>Transmission 3.00</title>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
+      	<pubDate>Fri, 15 May 2020 20:00:00 -0400</pubDate>
+      	<enclosure
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-3.00.dmg"
+      	sparkle:version="14714.3.0"
+      	sparkle:shortVersionString="3.00"
+      	sparkle:dsaSignature="MCwCFCi6RymmxvjLmYcNsRhixhbMXqw3AhRZbdpKdr/GAcNn8ESXTMehttsMWQ=="
+      	type="application/octet-stream"/>
+      	<sparkle:minimumSystemVersion>10.10.0</sparkle:minimumSystemVersion>
+    </item>
     
     <item>
       	<title>Transmission 2.94</title>
-      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes107.html</sparkle:releaseNotesLink>
       	<pubDate>Tue, 1 May 2018 16:00:00 -0400</pubDate>
       	<enclosure
       	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.94.dmg"
