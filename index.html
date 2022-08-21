@@ -1,99 +1,447 @@
-<!-- begin top boilerplate -->
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <script type="text/javascript">
-        var current = 'main';
-    </script>
-    <title>Transmission</title>
-    <link rel="stylesheet" type="text/css" href="/includes/css/main.css">
-    <script src="/includes/js/constants.js" type="text/javascript"></script>
-    <script src="/includes/js/jquery.min.js" type="text/javascript"></script>
-    <script src="/js/js-global/FancyZoom.js" type="text/javascript"></script>
-    <script src="/js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-    <meta name="robots" content="noarchive" />
+   <meta charset="utf-8">
+   <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="A Fast, Easy and Free Bittorrent Client For Mac, Windows and Linux">
+   <title>Transmission</title>
+   <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="img/icons/1024.png" sizes="180x180">
+   <link rel="icon" href="img/icons/32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="img/icons/16.png" sizes="16x16" type="image/png">
+   <link rel="icon" href="img/icons/favicon.ico">
+   <link href="fontawesome/css/all.css" rel="stylesheet">
+   <link href="css/style.css" type="text/css" rel="stylesheet">
+   <script type="application/ld+json">
+      {
+         "@context": "http://schema.org",
+         "@type": "SoftwareApplication",
+         "applicationCategory": "MultimediaApplication",
+         "name": "Transmission",
+         "description": "A Fast, Easy and Free Bittorrent Client For Mac, Windows and Linux",
+         "image": "img/Transmission_icon.png",
+         "screenshot": ["img/homepage/carousel_homepage/screenshot_mac_full_window.png", "img/homepage/carousel_homepage/screenshot_windows.png", "img/homepage/carousel_homepage/screenshot_linux.png"],
+         "url": "transmissionbt.com",
+         "operatingSystem": ["macOS", "Windows", "Linux", "Unix"],
+         "softwareVersion": ["3.00"],
+         "offers": {
+            "@type": "Offer",
+            "price": "0"
+         }
+      }
+   </script>
 </head>
+
 <body>
-<script type="text/javascript">
-    $(function(){
-        $('#header').load('/includes/html/header.html');
-        $('#footer').load('/includes/html/footer.html');
-    });
-</script>
-<div id="header"></div>
-<div id="main">
-<div class="meat">
-<!-- end top boilerplate -->
+   <header class="px-3 pb-3 bg-dark bg-rainbow text-white"> <a class="visually-hidden-focusable" href="#content">Skip
+         Navigation</a>
+      <div class="container">
+         <!-- NAVIGATION START -->
+         <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="index.html" class="d-flex align-items-center mt-3 text-white text-decoration-none"> <img
+                  src="img/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="Transmission Logo" aria-hidden="true">
+               <h3 class="ml-3 mr-5 mt-2">&nbsp;Transmission&nbsp;&nbsp;&nbsp;</h3>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mt-4 justify-content-center mb-md-0" role="menu">
+               <li> <a href="index.html" class="nav-link px-2 active" role="menuitem">Home</a> </li>
+               <li> <a href="download.html" class="nav-link px-2" role="menuitem">Download</a> </li>
+               <li> <a href="addons.html" class="nav-link px-2" role="menuitem">Add-Ons</a> </li>
+               <li class="dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="menuitem"
+                     aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Community</a>
+                  <div class="dropdown-menu"> <a class="dropdown-item"
+                        href="https://github.com/transmission/transmission/issues">Report a bug</a> <a
+                        class="dropdown-item" href="https://github.com/transmission/transmission/discussions">Developer
+                        & Contributor Discussions</a> <a class="dropdown-item"
+                        href="https://forum.transmissionbt.com/">Community forum</a> </div>
+               </li>
+               <li> <a href="donate.html" class="nav-link px-2">Donate</a> </li>
+            </ul>
+            <a class="btn btn-outline-light navgitbttn" href="https://github.com/transmission/transmission"
+               role="button"> <i class="fa-brands fa-github"></i>&nbsp;GitHub </a>
+         </nav>
+         <!-- NAVIGATION END -->
+      </div>
+   </header>
+   <main id="content">
+      <section class="homepageheader">
+         <div class="container py-5">
+            <div class="row pb-4">
+               <div class="col-lg-6 pt-lg-5 pt-md-2 pb-lg-5 pb-md-1 text-center"> <img class="d-block mx-auto" src="img/Transmission_icon.png"
+                     alt="Transmission Torrent Client Logo" aria-hidden="true" width="175">
+                  <h1 class="display-5 fw-bold">Transmission</h1>
+                  <p class="lead mb-4 text-center"> A Fast, Easy and Free Bittorrent Client
+                     <br> For macOS, Windows and Linux
+                     <br>
+                     <!-- BUTTONS START -->
+                     <a class="btn btn-danger btn-lg px-4 fw-bold mt-3 mx-auto" href="download.html" role="button"> <i
+                           class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v3.0 stable</a>
+                     <br>
+                  <!-- stubbing them out so they can be reactivated when the beta is ready -->
+                  <!--
+                     <a class="btn btn-warning btn-md px-4 fw-bold mt-2 mx-auto" href="download.html" role="button"> <i
+                           class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v4.0 beta</a>
+                     <br>
+                  -->
+                     <!-- Button Modal Trigger --><b class="modal-link">
+                        <a class="mt-2 text-muted" data-bs-toggle="modal" data-bs-target="#ChangeLogModal"> Change
+                           Log</a>
+                     </b>
+                     <!-- BUTTONS END -->
+                  </p>
+               </div>
+               <div class="d-flex col-lg-6 align-items-center" aria-hidden="true">
+                  <div id="carouselExampleSlidesOnly" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000"> <img
+                              src="img/homepage/carousel_homepage/screenshot_apple_light.png" class="d-block w-100"
+                              alt="Apple Example"> </div>
+                        <div class="carousel-item" data-bs-interval="3000"> <img
+                              src="img/homepage/carousel_homepage/screenshot_windows.png" class="d-block w-100"
+                              alt="Windows Example"> </div>
+                        <div class="carousel-item" data-bs-interval="3000"> <img
+                              src="img/homepage/carousel_homepage/screenshot_linux.png" class="d-block w-100"
+                              alt="Linux Example"> </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="bg-dark bg-rainbow text-secondary px-sm-4 px-md-5">
+         <div class="container px-4">
+            <div class="row g-5">
+               <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> 
+                     <figure class="figure">
+                     <img
+                        src="img/homepage/screenshot_mac_full_window.png" class="d-block w-100 figure-img"
+                        alt="Apple Dark Mode Screenshot"> 
+                     <figcaption class="figure-caption">It's fast, it's extremely lightweight, and — even though it's available for a variety of platforms — it behaves just as you'd expect a Mac program to. 
+                        <span class="fst-italic">Macworld, naming Transmission a Mac Gem</span>
+                     </figcaption>
+                  </figure>
+                  </div>
+               <div class="col-lg-6 text-white">
+                  <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Easy &amp; Powerful</h1>
+                  <p class="lead mb-4 text-center lh-lg">Transmission is designed for easy, powerful use. We've set the
+                     defaults to just work and it only takes a few clicks to configure advanced features like watch
+                     directories, bad peer blocklists, and the web interface. When Ubuntu chose Transmission as its
+                     default BitTorrent client, one of the most-cited reasons was its easy learning curve.</p>          
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="bg-dark bg-rainbow text-secondary px-sm-4 px-md-5">
+         <div class="container px-4">
+            <div class="row flex-lg-row-reverse g-5 py-sm-2 py-md-5">
+               <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> <img
+                     src="img/homepage/distro_logos_homepage.svg" class="d-block w-100" alt="" aria-hidden="true">
+               </div>
+               <div class="col-lg-6 text-white">
+                  <h1 class="display-5 fw-bold text-center lh-1 mb-3">Native for Your System</h1>
+                  <h5 class="mb-3 text-center">Unlike many cross-platform applications, Transmission integrates
+                     seamlessly with your operating system.</h5>
+                  <p class="lead mb-1 lh-lg text-center"> <i
+                        class="fa-brands fa-apple"></i>&nbsp;&nbsp;&nbsp;Transmission on macOS is a truly native and
+                     polished experience. This isn't some cross-platform app that treats macOS as an afterthought. With
+                     a sleek and simple interface, Transmission meets or exceeds Apple UI standards while using native
+                     features.
+                  <!-- stubbing them out so they can be reactivated when the beta is ready -->
+                  <!--
+                     <br>v4.0 is Apple Silicon Native!
+                  -->
+                  </p>
+                  <p class="lead mb-1 lh-lg text-center"> <i class="fa-brands fa-windows"></i>&nbsp;&nbsp;&nbsp;The
+                     Qt-based Windows UI has been modernized and is fully Windows 11 ready. </p>
+                  <p class="lead mb-3 lh-lg text-center"> <i class="fa-brands fa-linux"></i>&nbsp;&nbsp;&nbsp;The GTK
+                     interface has been carefully written to follow the GNOME Human Interface Guidelines and features.
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="bg-dark bg-rainbow text-secondary px-sm-4 px-md-5">
+         <div class="container px-4">
+            <div class="row g-5 py-sm-2 py-md-5">
+               <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> <img
+                     src="img/homepage/screenshot_apple.png" class="d-block w-100" alt="" aria-hidden="true"> </div>
+               <div class="col-lg-6 text-white">
+                  <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Lightweight &amp; Lightning Fast</h1>
+                  <p class="lead mb-3 text-center lh-lg">Transmission has one of the lowest memory & resource footprints of any major BitTorrent client. Transmission's light overhead is one reason why it is so well suited for home NAS and media servers. Having been used by Western Digital, Zyxel and Belkin, Transmission gives truly impressive performance on almost any compatible hardware.</p>              
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="bg-dark bg-rainbow text-secondary px-sm-4 px-md-5">
+         <section class="container px-4">
+            <div class="row flex-lg-row-reverse g-5 py-sm-2 py-md-5">
+               <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> <img
+                     src="img/homepage/Privacy_Shield_2.png" class="d-block w-100 mt-3" alt="" aria-hidden="true">
+               </div>
+               <div class="col-lg-6 text-white">
+                  <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Open Source &amp; <br>Privacy Focused </h1>
+                  <p class="lead mb-2 text-center lh-lg">Transmission is an open source, volunteer-based project. Unlike
+                     some BitTorrent clients, Transmission doesn't play games with its users to make money.</p>
+                  <p class="lead mb-2 text-center lh-lg"> We don't bundle toolbars, pop-up ads, flash ads, twitter
+                     tools, or anything else. It doesn't hold some features back for a payware version. We don't track
+                     our users. Our website and forums have no third-party ads or analytics.</p>                
+               </div>
+            </div>
+         </section>
+         <section class="bg-dark bg-rainbow text-secondary px-sm-4 px-md-5">
+            <div class="px-4 pt-0 mb-5 text-center text-white">
+               <div class="col-lg-10 mx-auto mb-4">
+                  <h1 class="display-5 fw-bold lh-1 mb-3 mt-3 text-center">Sleek &amp; Feature Rich</h1>
+                  <p class="lead mb-2 mt-2 text-center lh-lg" style="color: white!important;">The features you want from
+                     a BitTorrent client with an easy-to-use interface: privacy protection, a web interface, full peer
+                     communications, tracker editing, speed limits, and more.</p>
+                  <!-- BUTTONS START -->
+                  <a class="btn btn-danger btn-lg x-4 me-sm-3 fw-bold mx-2 btn-min-width-300 mt-2" href="download.html"
+                     role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v3.0 stable
+                  </a>
+               <!-- stubbing them out so they can be reactivated when the beta is ready -->
+               <!--
+                  <a class="btn btn-warning btn-lg x-4 me-sm-3 fw-bold mx-2 btn-min-width-300 mt-2" href="download.html"
+                     role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v4.0 beta </span>
+                  </a>
+               -->
+               </div>
+               <div class="overflow-hidden" style="max-height: 30vh;">
+                  <div class="container px-5"> <img src="img/homepage/features.png" class="img-fluid" alt=""
+                        aria-hidden="true"> </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <section class="px-4 pb-5 pt-0 news-section">
+         <h2 class="display-6 fw-bold mb-4 text-center">News &amp; Updates</h2>
+         <div class="col-lg-8 mx-auto fs-5 news-content">
 
+            <p class="mb-3">As you may have noticed, we have a brand new homepage! We've modernized the site with a clean, light and dark motif, made it mobile and 4K screen-friendly, optimized the layout and updated the information on each page, and reduced the use of Javascript as much as possible!</p>
 
-<body onload="setupZoom()">
-<script type="text/javascript">
-    $(function(){
-        $('#stable_title').html("<p><big><b>Transmission " + Constants.current_version + "</b></big></p>");
-    });
-</script>
+            <p class="mb-3">This undertaking was due to the hard work by volunteers and feedback from the rest of the community on our Github project page. We've spent months refining this new site, but if anybody finds any remaining bugs, please go <a href="https://github.com/transmission/transmission/issues/2610">here</a> to report them.</p>
 
-<div id="summary" style="width: 100%; height: 200px;">
-
-<div id="summary-left" style="float: left; width: 280px; margin-top: 50px; text-align: center; box-shadow: #888 0 0 5px; -moz-box-shadow: #888 0 0 5px; -webkit-box-shadow: #888 0 0 5px; background-image: url('images/gradient.png'); background-position: center bottom; background-repeat: repeat-x;">
-	<div id="stable_title"></div>
-	<p>
-		<a href="/download/">Download Now</a><br/>
-		<a href="https://github.com/transmission/transmission/releases/latest">Release Notes</a><br/>
-		<a href="https://github.com/transmission/transmission/wiki/Previous-Releases">Previous Releases</a>
-	</p>
-	<p>
-	</p>
-</div><!-- summary-left -->
-
-<div id="summary-right"style="float: left; width: 460px; margin-top: 20px; padding-left: 30px">
-	<b>Feature Spotlight:</b>
-	<ul>
-		<li>Uses <a href="about/">fewer resources</a> than other clients</li>
-		<li>Native <a href="images/screenshots/Mac-Light-Large.png">Mac</a>, <a href="images/screenshots/GTK-Large.jpg">GTK+</a> and <a href="images/screenshots/Qt-Large.jpg">Qt</a> GUI clients</li>
-		<li><a href="https://en.wikipedia.org/wiki/Daemon_(computer_software)">Daemon</a> ideal for servers, embedded systems, and headless use</li>
-		<li>All these can be remote controlled by <a href="images/screenshots/Clutch-Large.jpg">Web</a> and <a href="images/screenshots/Curses-Large.jpg">Terminal</a> clients</li>
-		<li>Local Peer Discovery</li>
-		<li>Full <a href="https://en.wikipedia.org/wiki/BitTorrent_protocol_encryption">encryption</a>, <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">DHT</a>, <a href="https://en.wikipedia.org/wiki/Micro_Transport_Protocol">µTP</a>, <a href="https://en.wikipedia.org/wiki/Peer_exchange">PEX</a> and <a href="https://news.softpedia.com/news/BitTorrent-Magnet-Links-Explained-132536.shtml">Magnet Link</a> support</li>
-	</ul>
-	<p style="text-indent: 2em;"><a href="about/">Learn More...</a></p>
-</div><!-- summary-right -->
-
-<div id="screenshots">
-	<a href="images/screenshots/Mac-Dark-Large.png">
-	<img src="images/screenshots/Mac-Dark-Thumbnail.png" alt="Mac Screenshot Thumbnail" />
-	<br/>
-	Mac
-	</a>
-	<a href="images/screenshots/GTK-Large.jpg">
-	<img src="images/screenshots/GTK-Thumbnail.jpg" alt="GTK+ Screenshot Thumbnail" />
-	<br/>
-	GTK+
-	</a>
-	<a href="images/screenshots/Qt-Large.jpg">
-	<img src="images/screenshots/Qt-Thumbnail.jpg" alt="Qt Screenshot Thumbnail" />
-	<br/>
-	Qt
-	</a>
-	<a href="images/screenshots/Clutch-Large.jpg">
-	<img src="images/screenshots/Clutch-Thumbnail.jpg" alt="Web Client Screenshot Thumbnail" />
-	<br/>
-	Web Client
-	</a>
-	<a href="images/screenshots/Curses-Large.jpg">
-	<img src="images/screenshots/Curses-Thumbnail.jpg" alt="Curses Screenshot Thumbnail" />
-	<br/>
-	Terminal
-	</a>
-</div><!-- screenshots -->
-
-</div><!-- summary -->
-
-
-<!-- begin bottom boilerplate -->
-</div><!-- meat -->
-</div><!-- main -->
-<div id="footer"></div>
+            <!-- Replacement Entry for 4.0 Beta Release -->
+            <!--
+            <p class="mb-3">Since the latter part of 2021 a lot of work has been happening behind the scenes on
+               development that has included a complete rebase of the code and new features being included from
+               community contributors and the dedicated lead developers of the project. </p>
+            <p class="mb-4">There has been progress across all platforms on an almost daily basis. With <a
+                  href="https://build.transmissionbt.com/">nightly releases</a> we have been working on Apple Silicon
+               since last year, while v3.0 functions perfectly under Rosetta 2.</p>
+            <p>
+               Join the progress as Transmission enters
+               a beta phase to reach v4.0! 
+               </p>
+            
+               </p> -->
+            <!-- BUTTONS START -->
+            <div class="d-grid gap-2 d-lg-flex justify-content-md-center float-none">
+               <div class="d-grid d-md-flex justify-content-sm-center">
+                  <a class="btn btn-outline-dark btn-lg px-4 me-sm-3 fw-bold btn-min-width-320"
+                     href="https://github.com/transmission/transmission" role="button"> <i
+                        class="fa-brands fa-github"></i>&nbsp;Development on GitHub </a>
+               </div>
+               <div class="d-grid d-md-flex justify-content-sm-center">
+                  <a class="btn btn-danger btn-lg x-4 me-sm-3 fw-bold btn-min-width-320" href="download.html"
+                     role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v3.00 stable
+                  </a>
+               </div>
+               <!-- stubbing them out so they can be reactivated when the beta is ready -->
+               <!--
+               <div class="d-grid d-md-flex justify-content-sm-center">
+                  <a class="btn btn-warning btn-lg x-4 me-sm-3 fw-bold btn-min-width-320" href="download.html"
+                     role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v4.00 beta </span>
+                  </a>
+               </div>
+               -->
+            </div>
+            <!-- BUTTONS END -->
+         </div>
+      </section>
+   </main>
+   <footer class="footer mt-auto py-3 bg-dark bg-rainbow mt-auto">
+      <div class="container">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="index.html" class="d-flex align-items-center mt-2 text-white text-decoration-none"> <img
+                  src="img/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="">
+               <h3 class="ml-3 mr-5 mt-2">&nbsp;Transmission&nbsp;&nbsp;&nbsp;</h3>
+            </a>
+            <!-- NAVIGATION START -->
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mt-3 justify-content-center mb-md-0">
+               <li> <a href="index.html" class="nav-link px-2 active">Home</a> </li>
+               <li> <a href="download.html" class="nav-link px-2">Download</a> </li>
+               <li> <a href="addons.html" class="nav-link px-2">Add-Ons</a> </li>
+               <li class="dropdown dropup"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                     aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Community</a>
+                  <div class="dropdown-menu"> <a class="dropdown-item"
+                        href="https://github.com/transmission/transmission/issues">Report a bug</a> <a
+                        class="dropdown-item" href="https://github.com/transmission/transmission/discussions">Developer
+                        & Contributor Discussions</a> <a class="dropdown-item"
+                        href="https://forum.transmissionbt.com/">Community forum</a> </div>
+               </li>
+               <li> <a href="donate.html" class="nav-link px-2">Donate</a> </li>
+            </ul>
+            <!-- NAVIGATION END -->
+            <a class="btn btn-outline-light mb-0 mt-3 px-4" href="https://github.com/transmission/transmission"
+               role="button"> <i class="fa-brands fa-github"></i>&nbsp;GitHub </a>
+         </div>
+      </div>
+      <div class="container bg-dark bg-rainbow">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <div class="mt-auto py-3 mt-auto"> <span class="mr-2 text-secondary">&copy;
+                  Copyright 2005 -
+                  <script>
+                     document.write(new Date().getFullYear())
+                  </script> Transmission Project, All Rights Reserved
+               </span> </div>
+         </div>
+      </div>
+   </footer>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <!-- CHANGE LOG MODAL START -->
+   <div class="modal fade" id="ChangeLogModal" tabindex="-1" aria-labelledby="changeLogModalLable" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h2 class="modal-title" id="changeLogModalLable">Transmission v3.00 Latest: May 22, 2020</h2>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body changeLogModalLablecontent changelog">
+               <!-- CHANGE LOG MODAL CONTENT START: Edit Content Below-->
+               <a class="btn btn-outline-dark btn-md px-4 mb-3 me-sm-3 fw-bold"
+                  href="https://github.com/transmission/transmission" role="button"> <i
+                     class="fa-brands fa-github"></i>&nbsp;Development on GitHub </a>
+               <h3>All Platforms</h3>
+               <ul>
+                  <li>Allow the RPC server to listen on an IPv6 address (#161)</li>
+                  <li>Change TR_CURL_SSL_VERIFY to TR_CURL_SSL_NO_VERIFY and enable verification by default (#334)</li>
+                  <li>Go back to using hash as base name for resume and torrent files (those stored in configuration
+                     directory) (#122)</li>
+                  <li>Handle "fields" argument in "session-get" RPC request; if "fields" array is present in arguments,
+                     only return session fields specified; otherwise return all the fields as before</li>
+                  <li>Limit the number of incorrect authentication attempts in embedded web server to 100 to prevent
+                     brute-force attacks (#371)</li>
+                  <li>Set idle seed limit range to 1..40320 (4 weeks tops) in all clients (#212)</li>
+                  <li>Add Peer ID for Xfplay, PicoTorrent, Free Download Manager, Folx, Baidu Netdisk torrent clients
+                     (#256, #285, #355, #363, #386)</li>
+                  <li>Announce INT64_MAX as size left if the value is unknown (helps with e.g. Amazon S3 trackers)
+                     (#250)</li>
+                  <li>Add TCP_FASTOPEN support (should result in slight speedup) (#184)</li>
+                  <li>Improve ToS handling on IPv6 connections (#128, #341, #360, #692, #737)</li>
+                  <li>Abort handshake if establishing DH shared secret fails (leads to crash) (#27)</li>
+                  <li>Don't switch trackers while announcing (leads to crash) (#297)</li>
+                  <li>Improve completion scripts execution and error handling; add support for .cmd and .bat files on
+                     Windows (#405)</li>
+                  <li>Maintain a "session ID" file (in temporary directory) to better detect whether session is local or
+                     remote; return the ID as part of "session-get" response (TRAC-5348, #861)</li>
+                  <li>Change torrent location even if no data move is needed (#35)</li>
+                  <li>Support CIDR-notated blocklists (#230, #741)</li>
+                  <li>Update the resume file before running scripts (#825)</li>
+                  <li>Make multiscrape limits adaptive (#837)</li>
+                  <li>Add labels support to libtransmission and transmission-remote (#822)</li>
+                  <li>Parse session-id header case-insensitively (#765)</li>
+                  <li>Sanitize suspicious path components instead of rejecting them (#62, #294)</li>
+                  <li>Load CA certs from system store on Windows / OpenSSL (#446)</li>
+                  <li>Add support for mbedtls (formely polarssl) and wolfssl (formely cyassl), LibreSSL (#115, #116,
+                     #284, #486, #524, #570)</li>
+                  <li>Fix building against OpenSSL 1.1.0+ (#24)</li>
+                  <li>Fix quota support for uClibc-ng 1.0.18+ and DragonFly BSD (#42, #58, #312)</li>
+                  <li>Fix a number of memory leaks (magnet loading, session shutdown, bencoded data parsing) (#56)</li>
+                  <li>Bump miniupnpc version to 2.0.20170509 (#347)</li>
+                  <li>CMake-related improvements (Ninja generator, libappindicator, systemd, Solaris and macOS) (#72,
+                     #96, #117, #118, #133, #191)</li>
+                  <li>Switch to submodules to manage (most of) third-party dependencies</li>
+                  <li>Fail installation on Windows if UCRT is not installed</li>
+               </ul>
+               <h3>Mac Client</h3>
+               <ul>
+                  <li>Bump minimum macOS version to 10.10</li>
+                  <li>Dark Mode support (#644, #722, #757, #779, #788)</li>
+                  <li>Remove Growl support, notification center is always used (#387)</li>
+                  <li>Fix autoupdate on High Sierra and up by bumping the Sparkle version (#121, #600)</li>
+                  <li>Transition to ARC (#336)</li>
+                  <li>Use proper UTF-8 encoding (with macOS-specific normalization) when setting download/incomplete
+                     directory and completion script paths (#11)</li>
+                  <li>Fix uncaught exception when dragging multiple items between groups (#51)</li>
+                  <li>Add flat variants of status icons for message log (#134)</li>
+                  <li>Optimize image resources size (#304, #429)</li>
+                  <li>Update file icon when file name changes (#37)</li>
+                  <li>Update translations</li>
+               </ul>
+               <h3>GTK Client</h3>
+               <ul>
+                  <li>Add queue up/down hotkeys (#158)</li>
+                  <li>Modernize the .desktop file (#162)</li>
+                  <li>Add AppData file (#224)</li>
+                  <li>Add symbolic icon variant for the Gnome top bar and when the high contrast theme is in use (#414,
+                     #449)</li>
+                  <li>Update file icon when its name changes (#37)</li>
+                  <li>Switch from intltool to gettext for translations (#584, #647)</li>
+                  <li>Update translations, add new translations for Portuguese (Portugal)</li>
+               </ul>
+               <h3>Qt Client</h3>
+               <ul>
+                  <li>Bump minimum Qt version to 5.2</li>
+                  <li>Fix dropping .torrent files into main window on Windows (#269)</li>
+                  <li>Fix prepending of drive letter to various user-selected paths on Windows (#236, #307, #404, #437,
+                     #699, #723, #877)</li>
+                  <li>Fix sorting by progress in presence of magnet transfers (#234)</li>
+                  <li>Fix .torrent file trashing upon addition (#262)</li>
+                  <li>Add queue up/down hotkeys (#158)</li>
+                  <li>Reduce torrent properties (file tree) memory usage</li>
+                  <li>Display tooltips in torrent properties (file tree) in case the names don't fit (#411)</li>
+                  <li>Improve UI look on hi-dpi displays (YMMV)</li>
+                  <li>Use session ID (if available) to check if session is local or not (#861)</li>
+                  <li>Use default (instead of system) locale to be more flexible (#130)</li>
+                  <li>Modernize the .desktop file (#162)</li>
+                  <li>Update translations, add new translations for Afrikaans, Catalan, Danish, Greek, Norwegian Bokmål,
+                     Slovenian</li>
+               </ul>
+               <h3>Daemon</h3>
+               <ul>
+                  <li>Use libsystemd instead of libsystemd-daemon (TRAC-5921)</li>
+                  <li>Harden transmission-daemon.service by disallowing privileges elevation (#795)</li>
+                  <li>Fix exit code to be zero when dumping settings (#487)</li>
+               </ul>
+               <h3>Web Client</h3>
+               <ul>
+                  <li>Fix tracker error XSS in inspector (CVE-?)</li>
+                  <li>Fix performance issues due to improper use of setInterval() for UI refresh (TRAC-6031)</li>
+                  <li>Fix recognition of https:// links in comments field (#41, #180)</li>
+                  <li>Fix torrent list style in Google Chrome 59+ (#384)</li>
+                  <li>Show ETA in compact view on non-mobile devices (#146)</li>
+                  <li>Show upload file button on mobile devices (#320, #431, #956)</li>
+                  <li>Add keyboard hotkeys for web interface (#351)</li>
+                  <li>Disable autocompletion in torrent URL field (#367)</li>
+               </ul>
+               <h3>Utils</h3>
+               <ul>
+                  <li>Prevent crash in transmission-show displaying torrents with invalid creation date (#609)</li>
+                  <li>Handle IPv6 RPC addresses in transmission-remote (#247)</li>
+                  <li>Add --unsorted option to transmission-show (#767)</li>
+                  <li>Widen the torrent-id column in transmission-remote for cleaner formatting (#840)</li>
+               </ul>
+               <h3>Code Signing Policy</h3>
+               <ul>
+                  <li>Windows MSI packages: free code signing provided by SignPath.io, certificate by SignPath
+                     Foundation</li>
+               </ul>
+               <a class="btn btn-outline-dark btn-lg px-4 me-sm-3 fw-bold"
+                  href="https://github.com/transmission/transmission" role="button"> <i
+                     class="fa-brands fa-github"></i>&nbsp;Development on GitHub </a>
+               <!-- CHANGE LOG MODAL CONTENT END -->
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-lg btn-danger mx-auto px-5" data-bs-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- CHANGE LOG MODAL END -->
 </body>
+
 </html>
-<!-- end bottom boilerplate -->
