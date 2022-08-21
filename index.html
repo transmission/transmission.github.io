@@ -3,19 +3,19 @@
 
 <head>
    <meta charset="utf-8">
-   <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+   <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="description" content="A Fast, Easy and Free Bittorrent Client For Mac, Windows and Linux">
    <title>Transmission</title>
    <!-- Bootstrap core CSS -->
-   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+   <link href="/assets/bootstrap.min.css" type="text/css" rel="stylesheet">
    <!-- Favicons -->
-   <link rel="apple-touch-icon" href="img/icons/1024.png" sizes="180x180">
-   <link rel="icon" href="img/icons/32.png" sizes="32x32" type="image/png">
-   <link rel="icon" href="img/icons/16.png" sizes="16x16" type="image/png">
-   <link rel="icon" href="img/icons/favicon.ico">
-   <link href="fontawesome/css/all.css" rel="stylesheet">
-   <link href="css/style.css" type="text/css" rel="stylesheet">
+   <link rel="apple-touch-icon" href="/assets/images/icons/1024.png" sizes="180x180">
+   <link rel="icon" href="/assets/images/icons/32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="/assets/images/icons/16.png" sizes="16x16" type="image/png">
+   <link rel="icon" href="/assets/images/icons/favicon.ico">
+   <link href="/assets/fontawesome.css" rel="stylesheet">
+   <link href="/assets/style.css" type="text/css" rel="stylesheet">
    <script type="application/ld+json">
       {
          "@context": "http://schema.org",
@@ -23,8 +23,8 @@
          "applicationCategory": "MultimediaApplication",
          "name": "Transmission",
          "description": "A Fast, Easy and Free Bittorrent Client For Mac, Windows and Linux",
-         "image": "img/Transmission_icon.png",
-         "screenshot": ["img/homepage/carousel_homepage/screenshot_mac_full_window.png", "img/homepage/carousel_homepage/screenshot_windows.png", "img/homepage/carousel_homepage/screenshot_linux.png"],
+         "image": "/assets/images/Transmission_icon.png",
+         "screenshot": ["/assets/images/homepage/carousel_homepage/screenshot_mac_full_window.png", ["/assets/images/homepage/carousel_homepage/screenshot_windows.png", ["/assets/images/homepage/carousel_homepage/screenshot_linux.png"],
          "url": "transmissionbt.com",
          "operatingSystem": ["macOS", "Windows", "Linux", "Unix"],
          "softwareVersion": ["3.00"],
@@ -42,14 +42,14 @@
       <div class="container">
          <!-- NAVIGATION START -->
          <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="index.html" class="d-flex align-items-center mt-3 text-white text-decoration-none"> <img
-                  src="img/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="Transmission Logo" aria-hidden="true">
+            <a href="/" class="d-flex align-items-center mt-3 text-white text-decoration-none"> <img
+                  src="/assets/images/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="Transmission Logo" aria-hidden="true">
                <h3 class="ml-3 mr-5 mt-2">&nbsp;Transmission&nbsp;&nbsp;&nbsp;</h3>
             </a>
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mt-4 justify-content-center mb-md-0" role="menu">
-               <li> <a href="index.html" class="nav-link px-2 active" role="menuitem">Home</a> </li>
-               <li> <a href="download.html" class="nav-link px-2" role="menuitem">Download</a> </li>
-               <li> <a href="addons.html" class="nav-link px-2" role="menuitem">Add-Ons</a> </li>
+               <li> <a href="/" class="nav-link px-2 active" role="menuitem">Home</a> </li>
+               <li> <a href="/download" class="nav-link px-2" role="menuitem">Download</a> </li>
+               <li> <a href="/addons" class="nav-link px-2" role="menuitem">Add-Ons</a> </li>
                <li class="dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="menuitem"
                      aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Community</a>
                   <div class="dropdown-menu"> <a class="dropdown-item"
@@ -58,7 +58,7 @@
                         & Contributor Discussions</a> <a class="dropdown-item"
                         href="https://forum.transmissionbt.com/">Community forum</a> </div>
                </li>
-               <li> <a href="donate.html" class="nav-link px-2">Donate</a> </li>
+               <li> <a href="/donate" class="nav-link px-2">Donate</a> </li>
             </ul>
             <a class="btn btn-outline-light navgitbttn" href="https://github.com/transmission/transmission"
                role="button"> <i class="fa-brands fa-github"></i>&nbsp;GitHub </a>
@@ -70,19 +70,19 @@
       <section class="homepageheader">
          <div class="container py-5">
             <div class="row pb-4">
-               <div class="col-lg-6 pt-lg-5 pt-md-2 pb-lg-5 pb-md-1 text-center"> <img class="d-block mx-auto" src="img/Transmission_icon.png"
+               <div class="col-lg-6 pt-lg-5 pt-md-2 pb-lg-5 pb-md-1 text-center"> <img class="d-block mx-auto" src="/assets/images/Transmission_icon.png"
                      alt="Transmission Torrent Client Logo" aria-hidden="true" width="175">
                   <h1 class="display-5 fw-bold">Transmission</h1>
                   <p class="lead mb-4 text-center"> A Fast, Easy and Free Bittorrent Client
                      <br> For macOS, Windows and Linux
                      <br>
                      <!-- BUTTONS START -->
-                     <a class="btn btn-danger btn-lg px-4 fw-bold mt-3 mx-auto" href="download.html" role="button"> <i
+                     <a class="btn btn-danger btn-lg px-4 fw-bold mt-3 mx-auto" href="/download" role="button"> <i
                            class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v3.0 stable</a>
                      <br>
                   <!-- stubbing them out so they can be reactivated when the beta is ready -->
                   <!--
-                     <a class="btn btn-warning btn-md px-4 fw-bold mt-2 mx-auto" href="download.html" role="button"> <i
+                     <a class="btn btn-warning btn-md px-4 fw-bold mt-2 mx-auto" href="/download" role="button"> <i
                            class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v4.0 beta</a>
                      <br>
                   -->
@@ -97,13 +97,13 @@
                   <div id="carouselExampleSlidesOnly" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
                      <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000"> <img
-                              src="img/homepage/carousel_homepage/screenshot_apple_light.png" class="d-block w-100"
+                              src="/assets/images/homepage/carousel_homepage/screenshot_apple_light.png" class="d-block w-100"
                               alt="Apple Example"> </div>
                         <div class="carousel-item" data-bs-interval="3000"> <img
-                              src="img/homepage/carousel_homepage/screenshot_windows.png" class="d-block w-100"
+                              src="/assets/images/homepage/carousel_homepage/screenshot_windows.png" class="d-block w-100"
                               alt="Windows Example"> </div>
                         <div class="carousel-item" data-bs-interval="3000"> <img
-                              src="img/homepage/carousel_homepage/screenshot_linux.png" class="d-block w-100"
+                              src="/assets/images/homepage/carousel_homepage/screenshot_linux.png" class="d-block w-100"
                               alt="Linux Example"> </div>
                      </div>
                   </div>
@@ -114,12 +114,12 @@
       <section class="bg-dark bg-rainbow text-secondary px-sm-4 px-md-5">
          <div class="container px-4">
             <div class="row g-5">
-               <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> 
+               <div class="col-lg-6 text-center d-flex align-items-center justify-content-center">
                      <figure class="figure">
                      <img
-                        src="img/homepage/screenshot_mac_full_window.png" class="d-block w-100 figure-img"
-                        alt="Apple Dark Mode Screenshot"> 
-                     <figcaption class="figure-caption">It's fast, it's extremely lightweight, and — even though it's available for a variety of platforms — it behaves just as you'd expect a Mac program to. 
+                        src="/assets/images/homepage/screenshot_mac_full_window.png" class="d-block w-100 figure-img"
+                        alt="Apple Dark Mode Screenshot">
+                     <figcaption class="figure-caption">It's fast, it's extremely lightweight, and — even though it's available for a variety of platforms — it behaves just as you'd expect a Mac program to.
                         <span class="fst-italic">Macworld, naming Transmission a Mac Gem</span>
                      </figcaption>
                   </figure>
@@ -129,7 +129,7 @@
                   <p class="lead mb-4 text-center lh-lg">Transmission is designed for easy, powerful use. We've set the
                      defaults to just work and it only takes a few clicks to configure advanced features like watch
                      directories, bad peer blocklists, and the web interface. When Ubuntu chose Transmission as its
-                     default BitTorrent client, one of the most-cited reasons was its easy learning curve.</p>          
+                     default BitTorrent client, one of the most-cited reasons was its easy learning curve.</p>
                </div>
             </div>
          </div>
@@ -138,7 +138,7 @@
          <div class="container px-4">
             <div class="row flex-lg-row-reverse g-5 py-sm-2 py-md-5">
                <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> <img
-                     src="img/homepage/distro_logos_homepage.svg" class="d-block w-100" alt="" aria-hidden="true">
+                     src="/assets/images/homepage/distro_logos_homepage.svg" class="d-block w-100" alt="" aria-hidden="true">
                </div>
                <div class="col-lg-6 text-white">
                   <h1 class="display-5 fw-bold text-center lh-1 mb-3">Native for Your System</h1>
@@ -158,7 +158,7 @@
                      Qt-based Windows UI has been modernized and is fully Windows 11 ready. </p>
                   <p class="lead mb-3 lh-lg text-center"> <i class="fa-brands fa-linux"></i>&nbsp;&nbsp;&nbsp;The GTK
                      interface has been carefully written to follow the GNOME Human Interface Guidelines and features.
-                  </p> 
+                  </p>
                </div>
             </div>
          </div>
@@ -167,10 +167,10 @@
          <div class="container px-4">
             <div class="row g-5 py-sm-2 py-md-5">
                <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> <img
-                     src="img/homepage/screenshot_apple.png" class="d-block w-100" alt="" aria-hidden="true"> </div>
+                     src="/assets/images/homepage/screenshot_apple.png" class="d-block w-100" alt="" aria-hidden="true"> </div>
                <div class="col-lg-6 text-white">
                   <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Lightweight &amp; Lightning Fast</h1>
-                  <p class="lead mb-3 text-center lh-lg">Transmission has one of the lowest memory & resource footprints of any major BitTorrent client. Transmission's light overhead is one reason why it is so well suited for home NAS and media servers. Having been used by Western Digital, Zyxel and Belkin, Transmission gives truly impressive performance on almost any compatible hardware.</p>              
+                  <p class="lead mb-3 text-center lh-lg">Transmission has one of the lowest memory & resource footprints of any major BitTorrent client. Transmission's light overhead is one reason why it is so well suited for home NAS and media servers. Having been used by Western Digital, Zyxel and Belkin, Transmission gives truly impressive performance on almost any compatible hardware.</p>
                </div>
             </div>
          </div>
@@ -179,7 +179,7 @@
          <section class="container px-4">
             <div class="row flex-lg-row-reverse g-5 py-sm-2 py-md-5">
                <div class="col-lg-6 text-center d-flex align-items-center justify-content-center"> <img
-                     src="img/homepage/Privacy_Shield_2.png" class="d-block w-100 mt-3" alt="" aria-hidden="true">
+                     src="/assets/images/homepage/Privacy_Shield_2.png" class="d-block w-100 mt-3" alt="" aria-hidden="true">
                </div>
                <div class="col-lg-6 text-white">
                   <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Open Source &amp; <br>Privacy Focused </h1>
@@ -187,7 +187,7 @@
                      some BitTorrent clients, Transmission doesn't play games with its users to make money.</p>
                   <p class="lead mb-2 text-center lh-lg"> We don't bundle toolbars, pop-up ads, flash ads, twitter
                      tools, or anything else. It doesn't hold some features back for a payware version. We don't track
-                     our users. Our website and forums have no third-party ads or analytics.</p>                
+                     our users. Our website and forums have no third-party ads or analytics.</p>
                </div>
             </div>
          </section>
@@ -199,18 +199,18 @@
                      a BitTorrent client with an easy-to-use interface: privacy protection, a web interface, full peer
                      communications, tracker editing, speed limits, and more.</p>
                   <!-- BUTTONS START -->
-                  <a class="btn btn-danger btn-lg x-4 me-sm-3 fw-bold mx-2 btn-min-width-300 mt-2" href="download.html"
+                  <a class="btn btn-danger btn-lg x-4 me-sm-3 fw-bold mx-2 btn-min-width-300 mt-2" href="/download"
                      role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v3.0 stable
                   </a>
                <!-- stubbing them out so they can be reactivated when the beta is ready -->
                <!--
-                  <a class="btn btn-warning btn-lg x-4 me-sm-3 fw-bold mx-2 btn-min-width-300 mt-2" href="download.html"
+                  <a class="btn btn-warning btn-lg x-4 me-sm-3 fw-bold mx-2 btn-min-width-300 mt-2" href="/download"
                      role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v4.0 beta </span>
                   </a>
                -->
                </div>
                <div class="overflow-hidden" style="max-height: 30vh;">
-                  <div class="container px-5"> <img src="img/homepage/features.png" class="img-fluid" alt=""
+                  <div class="container px-5"> <img src="/assets/images/homepage/features.png" class="img-fluid" alt=""
                         aria-hidden="true"> </div>
                </div>
             </div>
@@ -234,9 +234,9 @@
                since last year, while v3.0 functions perfectly under Rosetta 2.</p>
             <p>
                Join the progress as Transmission enters
-               a beta phase to reach v4.0! 
+               a beta phase to reach v4.0!
                </p>
-            
+
                </p> -->
             <!-- BUTTONS START -->
             <div class="d-grid gap-2 d-lg-flex justify-content-md-center float-none">
@@ -246,14 +246,14 @@
                         class="fa-brands fa-github"></i>&nbsp;Development on GitHub </a>
                </div>
                <div class="d-grid d-md-flex justify-content-sm-center">
-                  <a class="btn btn-danger btn-lg x-4 me-sm-3 fw-bold btn-min-width-320" href="download.html"
+                  <a class="btn btn-danger btn-lg x-4 me-sm-3 fw-bold btn-min-width-320" href="/download"
                      role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v3.00 stable
                   </a>
                </div>
                <!-- stubbing them out so they can be reactivated when the beta is ready -->
                <!--
                <div class="d-grid d-md-flex justify-content-sm-center">
-                  <a class="btn btn-warning btn-lg x-4 me-sm-3 fw-bold btn-min-width-320" href="download.html"
+                  <a class="btn btn-warning btn-lg x-4 me-sm-3 fw-bold btn-min-width-320" href="/download"
                      role="button"> <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download v4.00 beta </span>
                   </a>
                </div>
@@ -266,15 +266,15 @@
    <footer class="footer mt-auto py-3 bg-dark bg-rainbow mt-auto">
       <div class="container">
          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="index.html" class="d-flex align-items-center mt-2 text-white text-decoration-none"> <img
-                  src="img/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="">
+            <a href="/" class="d-flex align-items-center mt-2 text-white text-decoration-none"> <img
+                  src="/assets/images/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="">
                <h3 class="ml-3 mr-5 mt-2">&nbsp;Transmission&nbsp;&nbsp;&nbsp;</h3>
             </a>
             <!-- NAVIGATION START -->
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mt-3 justify-content-center mb-md-0">
-               <li> <a href="index.html" class="nav-link px-2 active">Home</a> </li>
-               <li> <a href="download.html" class="nav-link px-2">Download</a> </li>
-               <li> <a href="addons.html" class="nav-link px-2">Add-Ons</a> </li>
+               <li> <a href="/" class="nav-link px-2 active">Home</a> </li>
+               <li> <a href="/download" class="nav-link px-2">Download</a> </li>
+               <li> <a href="/addons" class="nav-link px-2">Add-Ons</a> </li>
                <li class="dropdown dropup"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
                      aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Community</a>
                   <div class="dropdown-menu"> <a class="dropdown-item"
@@ -283,25 +283,15 @@
                         & Contributor Discussions</a> <a class="dropdown-item"
                         href="https://forum.transmissionbt.com/">Community forum</a> </div>
                </li>
-               <li> <a href="donate.html" class="nav-link px-2">Donate</a> </li>
+               <li> <a href="/donate" class="nav-link px-2">Donate</a> </li>
             </ul>
             <!-- NAVIGATION END -->
             <a class="btn btn-outline-light mb-0 mt-3 px-4" href="https://github.com/transmission/transmission"
                role="button"> <i class="fa-brands fa-github"></i>&nbsp;GitHub </a>
          </div>
       </div>
-      <div class="container bg-dark bg-rainbow">
-         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <div class="mt-auto py-3 mt-auto"> <span class="mr-2 text-secondary">&copy;
-                  Copyright 2005 -
-                  <script>
-                     document.write(new Date().getFullYear())
-                  </script> Transmission Project, All Rights Reserved
-               </span> </div>
-         </div>
-      </div>
    </footer>
-   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="/assets/bootstrap.bundle.min.js"></script>
    <!-- CHANGE LOG MODAL START -->
    <div class="modal fade" id="ChangeLogModal" tabindex="-1" aria-labelledby="changeLogModalLable" aria-hidden="true">
       <div class="modal-dialog modal-xl">
