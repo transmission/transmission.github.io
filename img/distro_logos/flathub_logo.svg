@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 208 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g id="rect8720" transform="matrix(0.329073,0,0,0.999896,5.17779,-918.513)">
+        <path d="M598.11,956.413C598.11,938.75 554.537,924.409 500.867,924.409L99.133,924.409C45.463,924.409 1.89,938.75 1.89,956.413L1.89,1088.63C1.89,1106.29 45.463,1120.63 99.133,1120.63L500.867,1120.63C554.537,1120.63 598.11,1106.29 598.11,1088.63L598.11,956.413Z" style="stroke:rgb(136,138,133);stroke-width:3.78px;"/>
+    </g>
+    <g id="g8587" transform="matrix(1,0,0,1,-752.113,-775.719)">
+        <path id="rect7736" d="M856.014,830.226L789.25,873.675L789.25,908.615L822.632,930.338L856.011,908.615L856.011,908.61L856.014,908.613L889.396,930.339L922.775,908.616L922.775,873.676L856.014,830.226Z" style="fill-rule:nonzero;stroke:white;stroke-width:24px;stroke-linecap:square;"/>
+        <g id="g7710" transform="matrix(0.502216,0,0,0.506367,429.632,432.905)">
+            <g id="rect7688" transform="matrix(0.840193,0.542287,-0.840193,0.542287,0,0)">
+                <rect x="1289.91" y="279.426" width="79.11" height="79.11" style="stroke:black;stroke-width:3.17px;stroke-linecap:square;stroke-linejoin:round;"/>
+            </g>
+            <g id="rect7690" transform="matrix(0.840193,0.542287,-0.840193,0.542287,0,0)">
+                <rect x="1226.29" y="215.806" width="79.11" height="79.11" style="fill:white;stroke:black;stroke-width:3.17px;stroke-linecap:square;stroke-linejoin:round;"/>
+            </g>
+            <path id="path7692" d="M915.468,824.93L915.468,893.93L849,936.83L849,867.83L915.468,824.93Z" style="fill-rule:nonzero;stroke:black;stroke-width:3.02px;stroke-linecap:square;stroke-linejoin:round;"/>
+            <path id="path7694" d="M783,824.93L783,893.93L849.468,936.83L849.468,867.83L783,824.93Z" style="fill:white;fill-rule:nonzero;stroke:black;stroke-width:3.02px;stroke-linecap:square;stroke-linejoin:round;"/>
+        </g>
+        <g id="g7722" transform="matrix(0.502216,0,0,0.506367,463.014,454.628)">
+            <g id="rect7714" transform="matrix(0.840193,0.542287,-0.840193,0.542287,0,0)">
+                <rect x="1289.91" y="279.426" width="79.11" height="79.11" style="stroke:black;stroke-width:3.17px;stroke-linecap:square;stroke-linejoin:round;"/>
+            </g>
+            <g id="rect7716" transform="matrix(0.840193,0.542287,-0.840193,0.542287,0,0)">
+                <rect x="1226.29" y="215.806" width="79.11" height="79.11" style="fill:white;stroke:black;stroke-width:3.17px;stroke-linecap:square;stroke-linejoin:round;"/>
+            </g>
+            <path id="path7718" d="M915.468,824.93L915.468,893.93L849,936.83L849,867.83L915.468,824.93Z" style="fill-rule:nonzero;stroke:black;stroke-width:3.02px;stroke-linecap:square;stroke-linejoin:round;"/>
+            <path id="path7720" d="M783,824.93L783,893.93L849.468,936.83L849.468,867.83L783,824.93Z" style="fill:white;fill-rule:nonzero;stroke:black;stroke-width:3.02px;stroke-linecap:square;stroke-linejoin:round;"/>
+        </g>
+        <g id="g7734" transform="matrix(0.502216,0,0,0.506367,396.25,454.628)">
+            <g id="rect7726" transform="matrix(0.840193,0.542287,-0.840193,0.542287,0,0)">
+                <rect x="1289.91" y="279.426" width="79.11" height="79.11" style="stroke:black;stroke-width:3.17px;stroke-linecap:square;stroke-linejoin:round;"/>
+            </g>
+            <g id="rect7728" transform="matrix(0.840193,0.542287,-0.840193,0.542287,0,0)">
+                <rect x="1226.29" y="215.806" width="79.11" height="79.11" style="fill:white;stroke:black;stroke-width:3.17px;stroke-linecap:square;stroke-linejoin:round;"/>
+            </g>
+            <path id="path7730" d="M915.468,824.93L915.468,893.93L849,936.83L849,867.83L915.468,824.93Z" style="fill-rule:nonzero;stroke:black;stroke-width:3.02px;stroke-linecap:square;stroke-linejoin:round;"/>
+            <path id="path7732" d="M783,824.93L783,893.93L849.468,936.83L849.468,867.83L783,824.93Z" style="fill:white;fill-rule:nonzero;stroke:black;stroke-width:3.02px;stroke-linecap:square;stroke-linejoin:round;"/>
+        </g>
+    </g>
+</svg>

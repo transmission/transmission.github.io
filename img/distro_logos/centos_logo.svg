@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,-42.6507,-0.650576)">
+        <g transform="matrix(1.16197,0,0,1.16197,-9.7179,-6.4419)">
+            <path d="M57.78,20.006L58.8,21.02L57.78,22.034L50.604,22.034L50.604,25.4L46.228,21L50.604,16.683L50.604,19.986L57.78,20.006Z" style="fill:rgb(147,34,121);"/>
+            <path d="M61.03,18.816L60.016,19.836L59.002,18.816L59.002,11.64L55.625,11.64L60.025,7.264L64.342,11.64L61.03,11.64L61.03,18.816Z" style="fill:rgb(239,167,36);"/>
+            <path d="M62.22,22.064L61.2,21.05L62.22,20.036L69.396,20.036L69.396,16.66L73.772,21.06L69.396,25.377L69.396,22.074L62.22,22.064Z" style="fill:rgb(38,37,119);"/>
+            <path d="M58.97,23.254L59.984,22.234L60.998,23.254L60.998,30.43L64.375,30.43L59.975,34.806L55.658,30.43L58.961,30.43L58.97,23.254Z" style="fill:rgb(156,205,42);"/>
+        </g>
+        <g transform="matrix(1.16197,0,0,1.16197,-9.7179,-6.4419)">
+            <rect x="50.346" y="11.382" width="8.72" height="8.72" style="fill:rgb(156,205,42);stroke:white;stroke-width:0.62px;"/>
+            <rect x="60.934" y="11.382" width="8.72" height="8.72" style="fill:rgb(147,34,121);stroke:white;stroke-width:0.62px;"/>
+            <rect x="60.934" y="21.97" width="8.72" height="8.72" style="fill:rgb(239,167,36);stroke:white;stroke-width:0.62px;"/>
+            <rect x="50.346" y="21.97" width="8.72" height="8.72" style="fill:rgb(38,37,119);stroke:white;stroke-width:0.62px;"/>
+            <path d="M46.347,21.035L52.513,14.869L58.679,21.035L52.513,27.201L46.347,21.035ZM53.834,13.548L60,7.382L66.166,13.548L60,19.714L53.834,13.548ZM61.32,21.035L67.486,14.869L73.652,21.035L67.486,27.201L61.32,21.035ZM53.834,28.522L60,22.356L66.166,28.522L60,34.688L53.834,28.522Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:0.62px;"/>
+        </g>
+    </g>
+</svg>
