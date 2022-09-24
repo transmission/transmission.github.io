@@ -28,7 +28,7 @@ main a:hover {
 }
 
 .news-section {
-  background-image: url(images/homepage/gear_backgrounds/gear_2_background_2.jpg);
+  background-image: url(images/homepage/gear_backgrounds/gear_2_background_2.png);
   background-position: left bottom;
   background-repeat: no-repeat;
 }
@@ -40,7 +40,7 @@ main a:hover {
 
 @media (min-width: 992px) {
   .homepageheader {
-    background-image: url(images/homepage/gear_backgrounds/gear_1_background_2.jpg), url(images/homepage/gear_backgrounds/gear_2_background_2.jpg);
+    background-image: url(images/homepage/gear_backgrounds/gear_1_background_2.png), url(images/homepage/gear_backgrounds/gear_2_background_2.png);
     background-position: right center, left bottom;
     background-repeat: no-repeat, no-repeat;
   }
@@ -59,7 +59,7 @@ main a:hover {
 }
 @media (max-width: 991px) {
   .homepageheader {
-    background-image: url(images/homepage/gear_backgrounds/gear_2_background_3.jpg);
+    background-image: url(images/homepage/gear_backgrounds/gear_2_background_3.png);
     background-position: left top;
     background-repeat: no-repeat;
   }
@@ -201,10 +201,6 @@ background: linear-gradient(to right, #140A17 0%, #041e2a 50%, #140A17 100%);
   .dropdown-item:focus,
   .card {
     background: #3b4252;
-  }
-  .homepageheader,
-  .news-section {
-    background-image: initial;
   }
   .text-muted {
     color: #81a1c1 !important
