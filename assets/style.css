@@ -208,4 +208,42 @@ background: linear-gradient(to right, #140A17 0%, #041e2a 50%, #140A17 100%);
   code {
     color: #f87cba;
   }
+
+  /* Copy-paste the btn-outline-light styles from Bootstrap, but apply them
+   * to btn-outline-dark classes in dark mode. Is this gross? Yes, but a proper
+   * dark-mode solution would require framework-level support, and as long as
+   * we only need to invert the one button class, this is much easier. */
+  .btn-outline-dark{
+      color: #f8f9fa;
+      border-color: #f8f9fa
+  }
+  .btn-outline-dark:hover {
+      color: #000;
+      background-color:#f8f9fa;
+      border-color:#f8f9fa
+  }
+  .btn-check:focus+.btn-outline-dark,.btn-outline-dark:focus {
+      box-shadow: 0 0 0 .25rem rgba(248,249,250,.5);
+  }
+  .btn-check:active+.btn-outline-dark,
+  .btn-check:checked+.btn-outline-dark,
+  .btn-outline-dark.active,
+  .btn-outline-dark.dropdown-toggle.show,
+  .btn-outline-dark:active {
+      color: #000;
+      background-color: #f8f9fa;
+      border-color: #f8f9fa;
+  }
+  .btn-check:active+.btn-outline-dark:focus,
+  .btn-check:checked+.btn-outline-dark:focus,
+  .btn-outline-dark.active:focus,
+  .btn-outline-dark.dropdown-toggle.show:focus,
+  .btn-outline-dark:active:focus {
+      box-shadow: 0 0 0 .25rem rgba(248,249,250,.5);
+  }
+  .btn-outline-dark.disabled,
+  .btn-outline-dark:disabled {
+      color: #f8f9fa;
+      background-color: transparent;
+  }
 }
