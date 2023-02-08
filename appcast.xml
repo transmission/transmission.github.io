@@ -14,7 +14,7 @@
       	<enclosure
       	url="https://github.com/transmission/transmission/releases/download/4.0.0/Transmission-4.0.0.dmg"
       	sparkle:version="14714.4.0"
-      	sparkle:shortVersionString="4.00"
+      	sparkle:shortVersionString="4.0.0"
       	sparkle:dsaSignature="MC0CFCQNhDHsunGlUYaQPnnWk2t0uw4/AhUAhfk3S75+674eUy/Y/WK2lRwJxvw="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.13.0</sparkle:minimumSystemVersion>
