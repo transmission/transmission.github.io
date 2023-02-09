@@ -38,6 +38,10 @@ main a:hover {
   min-width: 120px;
 }
 
+,card-text {
+  overflow: scroll;
+}
+
 @media (min-width: 992px) {
   .homepageheader {
     background-image: url(images/homepage/gear_backgrounds/gear_1_background_2.jpg), url(images/homepage/gear_backgrounds/gear_2_background_2.jpg);
