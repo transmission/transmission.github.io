@@ -178,6 +178,9 @@ background: linear-gradient(to right, #140A17 0%, #041e2a 50%, #140A17 100%);
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
   body,
   .dropdown-menu,
   .dropdown-item,
