@@ -15,7 +15,7 @@
       	url="https://github.com/transmission/transmission/releases/download/4.0.5/Transmission-4.0.5.dmg"
       	sparkle:version="14714.4.0.5"
       	sparkle:shortVersionString="4.0.5"
-      	sparkle:dsaSignature="MCwCFGqHbLnx7qGh85H7eJj2BfdmMZS1AhQun0G54V/kZbRaJ+WooQo7z6Y0dA=="
+      	sparkle:dsaSignature="MC0CFQCFmLKa+ctHGaTAltjyUor/+SgYlQIUf5cuO6kRIhg4eOfa7kRaVRGt/PE="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.13.0</sparkle:minimumSystemVersion>
     </item>
