@@ -8,6 +8,19 @@
     <pubDate>Tue, 28 May 2024 21:00:00 -0400</pubDate>
     
     <item>
+      	<title>Transmission 4.1.0</title>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes-beta.html</sparkle:releaseNotesLink>
+      	<pubDate>Thu, 12 Dec 2024 20:00:00 -0400</pubDate>
+      	<enclosure
+      	url="https://github.com/transmission/transmission/releases/download/4.1.0-beta.1/Transmission-4.1.0-beta.1.dmg"
+      	sparkle:version="14718.1.1"
+      	sparkle:shortVersionString="4.1.0-beta.1"
+      	sparkle:dsaSignature="MCwCFGftSNBioT8if+O3x4xP+z0+r4JPAhQ0qwa0S8lS0pYmoMZPMRpzyZsnsA=="
+      	type="application/octet-stream"/>
+      	<sparkle:minimumSystemVersion>10.13.0</sparkle:minimumSystemVersion>
+    </item>
+    
+    <item>
       	<title>Transmission 4.0.6</title>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
       	<pubDate>Tue, 28 May 2024 21:00:00 -0400</pubDate>

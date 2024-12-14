@@ -13,6 +13,7 @@ a {
 
 main a:hover {
   color: #BA0000;
+  opacity: 100%;
 }
 
 .btn {
@@ -36,6 +37,10 @@ main a:hover {
 .navgitbttn {
   margin-bottom: 0px;
   min-width: 120px;
+}
+
+.dlbeta {
+  opacity: 50%;
 }
 
 @media (min-width: 992px) {
