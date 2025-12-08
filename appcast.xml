@@ -5,19 +5,19 @@
     <link>https://transmissionbt.com/appcast.xml</link>
     <description>Most recent version available.</description>
     <language>en</language>
-    <pubDate>Mon, 10 Mar 2024 21:00:00 -0400</pubDate>
+    <pubDate>Wed, 3 Dec 2025 21:00:00 -0400</pubDate>
     
     <item>
       	<title>Transmission 4.1.0</title>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes-beta.html</sparkle:releaseNotesLink>
-      	<pubDate>Mon, 10 Mar 2024 21:00:00 -0400</pubDate>
+      	<pubDate>Wed, 3 Dec 2025 21:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://github.com/transmission/transmission/releases/download/4.1.0-beta.2/Transmission-4.1.0-beta.2.dmg"
-      	sparkle:version="14718.1.2"
-      	sparkle:shortVersionString="4.1.0-beta.2"
-      	sparkle:dsaSignature="MCwCFAgQa7UGd6lTqemaASJUXNFqW/hnAhRjBFX8uzyX4GiJegfrNPzFHLq2lg=="
+      	url="https://github.com/transmission/transmission/releases/download/4.1.0-beta.4/Transmission-4.1.0-beta.4.dmg"
+      	sparkle:version="14718.1.4"
+      	sparkle:shortVersionString="4.1.0-beta.4"
+      	sparkle:dsaSignature="MC0CFQCVBQlA/+7x3lK+G9e2s3W8TBK/NAIUQ8+v7kkCAq0kSt2LZn5uvp7SK+4="
       	type="application/octet-stream"/>
-      	<sparkle:minimumSystemVersion>10.13.0</sparkle:minimumSystemVersion>
+      	<sparkle:minimumSystemVersion>11.0.0</sparkle:minimumSystemVersion>
     </item>
     
     <item>
