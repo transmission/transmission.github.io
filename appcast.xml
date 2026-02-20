@@ -12,7 +12,7 @@
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
       	<pubDate>Thu, 19 Feb 2026 21:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://github.com/transmission/transmission/releases/download/4.1.0/Transmission-4.1.1.dmg"
+      	url="https://github.com/transmission/transmission/releases/download/4.1.1/Transmission-4.1.1.dmg"
       	sparkle:version="14718.1.199"
       	sparkle:shortVersionString="4.1.1"
       	sparkle:dsaSignature="MC0CFFgQuBFrgwGVvUKtNFw7MD+ii9ruAhUAkEWbpYLNnA6J46736XacqdtrCv4="
