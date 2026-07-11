@@ -9,64 +9,74 @@
 
     <item>
       	<title>Transmission 4.1.3</title>
+      	<link>https://transmissionbt.com</link>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
+      	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
+      	<sparkle:version>14718.1.399</sparkle:version>
+      	<sparkle:shortVersionString>4.1.3</sparkle:shortVersionString>
       	<pubDate>Mon, 29 Jun 2026 21:00:00 -0400</pubDate>
       	<enclosure
       	url="https://github.com/transmission/transmission/releases/download/4.1.3/Transmission-4.1.3.dmg"
-      	sparkle:version="14718.1.399"
-      	sparkle:shortVersionString="4.1.3"
       	sparkle:dsaSignature="MCwCFEgxEjfAWryZLcihXUQDmew3ugX8AhR4i7Cvf33w5aLo5QTgxO4T+3waKg=="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>11.0.0</sparkle:minimumSystemVersion>
     </item>
-    
+
     <item>
       	<title>Transmission 4.0.6</title>
+      	<link>https://transmissionbt.com</link>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes1013.html</sparkle:releaseNotesLink>
+      	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
+      	<sparkle:version>14718.0.699</sparkle:version>
+      	<sparkle:shortVersionString>4.0.6</sparkle:shortVersionString>
       	<pubDate>Tue, 28 May 2024 21:00:00 -0400</pubDate>
       	<enclosure
       	url="https://github.com/transmission/transmission/releases/download/4.0.6/Transmission-4.0.6.dmg"
-      	sparkle:version="14718.0.699"
-      	sparkle:shortVersionString="4.0.6"
       	sparkle:dsaSignature="MC0CFEAgXKabWVq4Xka/ikGKNmvV9qIbAhUAlWLbzmUlM/fw8gXji6T68vrst+0="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.13.0</sparkle:minimumSystemVersion>
     </item>
-    
+
     <item>
       	<title>Transmission 3.00</title>
+      	<link>https://transmissionbt.com</link>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes1010.html</sparkle:releaseNotesLink>
+      	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
+      	<sparkle:version>14714.3.0</sparkle:version>
+      	<sparkle:shortVersionString>3.00</sparkle:shortVersionString>
       	<pubDate>Fri, 15 May 2020 20:00:00 -0400</pubDate>
       	<enclosure
       	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-3.00.dmg"
-      	sparkle:version="14714.3.0"
-      	sparkle:shortVersionString="3.00"
       	sparkle:dsaSignature="MCwCFCi6RymmxvjLmYcNsRhixhbMXqw3AhRZbdpKdr/GAcNn8ESXTMehttsMWQ=="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.10.0</sparkle:minimumSystemVersion>
     </item>
-    
+
     <item>
       	<title>Transmission 2.94</title>
+      	<link>https://transmissionbt.com</link>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes107.html</sparkle:releaseNotesLink>
+      	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
+      	<sparkle:version>14714.2.94</sparkle:version>
+      	<sparkle:shortVersionString>2.94</sparkle:shortVersionString>
       	<pubDate>Tue, 1 May 2018 16:00:00 -0400</pubDate>
       	<enclosure
       	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.94.dmg"
-      	sparkle:version="14714.2.94"
-      	sparkle:shortVersionString="2.94"
       	sparkle:dsaSignature="MCwCFD0ODnrwm5EdvdxsDYwb9obGmYx7AhR+VH2quJ0Pvnd9jBB71oVCuxTbyQ=="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
     </item>
-    
+
     <item>
       	<title>Transmission 2.84</title>
+      	<link>https://transmissionbt.com</link>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes106.html</sparkle:releaseNotesLink>
+      	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
+      	<sparkle:version>14306</sparkle:version>
+      	<sparkle:shortVersionString>2.84</sparkle:shortVersionString>
       	<pubDate>Mon, 30 Jun 2014 23:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.84.dmg" 
-      	sparkle:version="14306"
-      	sparkle:shortVersionString="2.84"
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.84.dmg"
       	sparkle:dsaSignature="MCwCFAjRhM3MLlYeMjYUw2/MsX21ugDnAhQvb6lINvb+3bNKwmQcanivp2qlmw=="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.6.0</sparkle:minimumSystemVersion>
@@ -74,12 +84,14 @@
 
     <item>
       	<title>Transmission 2.42</title>
+      	<link>https://transmissionbt.com</link>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes105.html</sparkle:releaseNotesLink>
+      	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
+      	<sparkle:version>13013</sparkle:version>
+      	<sparkle:shortVersionString>2.42</sparkle:shortVersionString>
       	<pubDate>Wed, 19 Oct 2011 22:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.42.dmg" 
-      	sparkle:version="13013"
-      	sparkle:shortVersionString="2.42"
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-2.42.dmg"
       	sparkle:dsaSignature="MC0CFQCVkkE30+qNQnk1zgdk738dVS6uVAIULSWcTiOel2JfqTCreDy1J8UgTi4="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.5.0</sparkle:minimumSystemVersion>
@@ -87,16 +99,18 @@
 
     <item>
       	<title>Transmission 1.54</title>
+      	<link>https://transmissionbt.com</link>
       	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes104.html</sparkle:releaseNotesLink>
+      	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
+      	<sparkle:version>8615</sparkle:version>
+      	<sparkle:shortVersionString>1.54</sparkle:shortVersionString>
       	<pubDate>Thu, 04 June 2009 20:00:00 -0400</pubDate>
       	<enclosure
-      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-1.54.dmg" 
-      	sparkle:version="8615"
-      	sparkle:shortVersionString="1.54"
+      	url="https://github.com/transmission/transmission-releases/raw/master/Transmission-1.54.dmg"
       	sparkle:dsaSignature="MCwCFCfR8NXqspNkW4xCtFWXLLE8OegiAhR28nofs7rwHU5gSNRZzg40PBvJYw=="
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>10.4.11</sparkle:minimumSystemVersion>
     </item>
-    
+
   </channel>
 </rss>
