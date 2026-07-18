@@ -1,2 +1,175 @@
-<meta http-equiv="refresh" content="0; url=/donate.html" />
-<p><a href="/">Home</a></p>
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Support charities suggested by the Transmission maintainer team, or find a charity near you with GiveRadar">
+   <title>Transmission | Donate</title>
+   <!-- Bootstrap core CSS -->
+   <link href="/assets/bootstrap.min.css" type="text/css" rel="stylesheet">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="/assets/images/icons/1024.png" sizes="180x180">
+   <link rel="icon" href="/assets/images/icons/32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="/assets/images/icons/16.png" sizes="16x16" type="image/png">
+   <link rel="icon" href="/assets/images/icons/favicon.ico">
+   <link href="/assets/fontawesome.css" rel="stylesheet">
+   <link href="/assets/style.css" type="text/css" rel="stylesheet">
+   <style>
+      /* Keep the charity columns visually symmetric */
+      .charity-logo {
+         width: 100%;
+         max-width: 340px;
+         height: 120px;
+         padding: 1.25rem 1.5rem;
+         /* Fixed tile that reads in both light and dark mode: NOMC's logo is
+            white, so it needs a dark backdrop regardless of the page theme. */
+         background: #000000;
+         border: 1px solid rgba(255, 255, 255, 0.12);
+         border-radius: 0.75rem;
+      }
+      .charity-logo img {
+         max-height: 100%;
+         max-width: 100%;
+         width: auto;
+      }
+      /* GiveRadar's asset is the icon only, so pair it with a wordmark that
+         reads in the dark tile alongside the other charities' full logos. */
+      .charity-logo-text {
+         color: #ffffff;
+         font-size: 1.75rem;
+         font-weight: 700;
+         letter-spacing: 0.02em;
+      }
+      .charity-donate {
+         min-width: 18rem;
+      }
+   </style>
+</head>
+
+<body>
+   <header class="px-3 pb-3 bg-dark bg-rainbow text-white"> <a class="visually-hidden-focusable" href="#content">Skip
+         Navigation</a>
+      <div class="container">
+         <!-- NAVIGATION START -->
+         <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mt-3 text-white text-decoration-none"> <img
+                  src="/assets/images/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="Transmission Logo" aria-hidden="true">
+               <h3 class="ml-3 mr-5 mt-2">&nbsp;Transmission&nbsp;&nbsp;&nbsp;</h3>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mt-4 justify-content-center mb-md-0" role="menu">
+               <li> <a href="/" class="nav-link px-2" role="menuitem">Home</a> </li>
+               <li> <a href="/download" class="nav-link px-2" role="menuitem">Download</a> </li>
+               <li> <a href="/addons" class="nav-link px-2" role="menuitem">Add-Ons</a> </li>
+               <li class="dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="menuitem"
+                     aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Community</a>
+                  <div class="dropdown-menu"> <a class="dropdown-item"
+                        href="https://github.com/transmission/transmission/issues">Report a bug</a> <a
+                        class="dropdown-item" href="https://github.com/transmission/transmission/discussions">Developer
+                        & Contributor Discussions</a> <a class="dropdown-item"
+                        href="https://forum.transmissionbt.com/">Community forum</a> </div>
+               </li>
+               <li> <a href="/donate" class="nav-link px-2 active">Donate</a> </li>
+            </ul>
+            <a class="btn btn-outline-light navgitbttn" href="https://github.com/transmission/transmission"
+               role="button"> <i class="fa-brands fa-github"></i>&nbsp;GitHub </a>
+         </nav>
+         <!-- NAVIGATION END -->
+      </div>
+   </header>
+   <main id="content">
+      <div class="container px-4 py-5">
+         <!-- Charities -->
+         <section class="py-5">
+            <!-- Why these charities -->
+            <div class="row justify-content-center text-center mb-5">
+               <div class="col-lg-8">
+                  <p class="lead mb-0">Thank you for thinking of donating!
+                     Please consider these two charities below that have been suggested by
+                     members of the Transmission maintainer team, or use GiveRadar to find
+                     a charity near you.</p>
+               </div>
+            </div>
+            <div class="row g-5 justify-content-center text-center">
+               <!-- Clean Air Task Force -->
+               <div class="col-md-4 d-flex flex-column align-items-center justify-content-start">
+                  <div class="charity-logo d-flex align-items-center justify-content-center mb-4">
+                     <img src="/assets/images/charities/clean-air-task-force.png" class="img-fluid"
+                        alt="Clean Air Task Force" />
+                  </div>
+                  <a class="btn btn-lg btn-success charity-donate px-4 mb-4" href="https://www.catf.us/donate/"
+                     role="button">Donate to the Clean Air Task Force</a>
+                  <p class="col-lg-10 mb-0">The Clean Air Task Force is a global nonprofit that pushes the changes needed
+                     to reach a zero-emissions, high-energy planet at an affordable cost. It advances the most neglected,
+                     high-impact climate solutions &mdash; from carbon capture and superhot-rock geothermal to advanced
+                     nuclear and cutting methane &mdash; and is consistently ranked among the most cost-effective climate
+                     charities in the world.</p>
+               </div>
+               <!-- New Orleans Musicians' Clinic -->
+               <div class="col-md-4 d-flex flex-column align-items-center justify-content-start">
+                  <div class="charity-logo d-flex align-items-center justify-content-center mb-4">
+                     <img src="/assets/images/charities/new-orleans-musicians-clinic.png" class="img-fluid"
+                        alt="New Orleans Musicians' Clinic" />
+                  </div>
+                  <a class="btn btn-lg btn-success charity-donate px-4 mb-4"
+                     href="https://neworleansmusiciansclinic.org/donate/" role="button">Donate to the Musicians'
+                     Clinic</a>
+                  <p class="col-lg-10 mb-0">The New Orleans Musicians' Clinic provides affordable, comprehensive medical
+                     and mental-health care to the musicians and culture-bearers who keep New Orleans' living traditions
+                     alive. Since 1998 it has kept thousands of working artists healthy and performing, using
+                     music-as-medicine to improve the health of the whole community.</p>
+               </div>
+               <!-- GiveRadar -->
+               <div class="col-md-4 d-flex flex-column align-items-center justify-content-start">
+                  <div class="charity-logo d-flex align-items-center justify-content-center gap-3 mb-4">
+                     <img src="/assets/images/charities/giveradar.png" class="img-fluid" alt="GiveRadar" />
+                     <span class="charity-logo-text">GiveRadar</span>
+                  </div>
+                  <a class="btn btn-lg btn-success charity-donate px-4 mb-4" href="https://giveradar.com/"
+                     role="button">Find a charity near you</a>
+                  <p class="col-lg-10 mb-0">GiveRadar helps you discover and compare charities so you can support a
+                     cause that matters to you. Search by location or area of focus to find reputable local and global
+                     organizations, and give directly to the ones you choose.</p>
+               </div>
+            </div>
+         </section>
+
+         <!-- Transmission opt-out -->
+         <section class="text-center pt-4 mt-5">
+            <p class="text-muted small mt-5 mb-0">If you want to donate to Transmission, donations@transmissionbt.com is PayPal account used for processing online donations made by Transmission users.</p>
+         </section>
+      </div>
+   </main>
+   <footer class="footer mt-auto py-3 bg-dark bg-rainbow mt-auto">
+      <div class="container">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mt-2 text-white text-decoration-none"> <img
+                  src="/assets/images/Transmission_icon.png" class="d-block align-middle" style="width:50px;" alt="Transmission Icon"  aria-hidden="true">
+               <h3 class="ml-3 mr-5 mt-2">&nbsp;Transmission&nbsp;&nbsp;&nbsp;</h3>
+            </a>
+            <!-- NAVIGATION START -->
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mt-3 justify-content-center mb-md-0">
+               <li> <a href="/" class="nav-link px-2">Home</a> </li>
+               <li> <a href="/download" class="nav-link px-2 active">Download</a> </li>
+               <li> <a href="/addons" class="nav-link px-2">Add-Ons</a> </li>
+               <li class="dropdown dropup"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                     aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Community</a>
+                  <div class="dropdown-menu"> <a class="dropdown-item"
+                        href="https://github.com/transmission/transmission/issues">Report a bug</a> <a
+                        class="dropdown-item" href="https://github.com/transmission/transmission/discussions">Developer
+                        & Contributor Discussions</a> <a class="dropdown-item"
+                        href="https://forum.transmissionbt.com/">Community forum</a> </div>
+               </li>
+               <li> <a href="/donate" class="nav-link px-2">Donate</a> </li>
+            </ul>
+            <!-- NAVIGATION END -->
+            <a class="btn btn-outline-light mb-0 mt-3 px-4" href="https://github.com/transmission/transmission"
+               role="button"> <i class="fa-brands fa-github"></i>&nbsp;GitHub </a>
+         </div>
+      </div>
+   </footer>
+   <script src="/assets/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
