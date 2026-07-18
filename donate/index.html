@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="Support high-impact climate work through the Clean Air Task Force">
+   <meta name="description" content="Support charities suggested by the Transmission maintainer team, or find a charity near you with GiveRadar">
    <title>Transmission | Donate</title>
    <!-- Bootstrap core CSS -->
    <link href="/assets/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -17,7 +17,7 @@
    <link href="/assets/fontawesome.css" rel="stylesheet">
    <link href="/assets/style.css" type="text/css" rel="stylesheet">
    <style>
-      /* Keep the two charity columns visually symmetric */
+      /* Keep the charity columns visually symmetric */
       .charity-logo {
          width: 100%;
          max-width: 340px;
@@ -33,6 +33,14 @@
          max-height: 100%;
          max-width: 100%;
          width: auto;
+      }
+      /* GiveRadar's asset is the icon only, so pair it with a wordmark that
+         reads in the dark tile alongside the other charities' full logos. */
+      .charity-logo-text {
+         color: #ffffff;
+         font-size: 1.75rem;
+         font-weight: 700;
+         letter-spacing: 0.02em;
       }
       .charity-donate {
          min-width: 18rem;
@@ -74,9 +82,18 @@
       <div class="container px-4 py-5">
          <!-- Charities -->
          <section class="py-5">
+            <!-- Why these charities -->
+            <div class="row justify-content-center text-center mb-5">
+               <div class="col-lg-8">
+                  <p class="lead mb-0">Thank you for thinking of donating!
+                     Please consider these two charities below that have been suggested by
+                     members of the Transmission maintainer team, or use GiveRadar to find
+                     a charity near you.</p>
+               </div>
+            </div>
             <div class="row g-5 justify-content-center text-center">
                <!-- Clean Air Task Force -->
-               <div class="col-md-6 d-flex flex-column align-items-center justify-content-start">
+               <div class="col-md-4 d-flex flex-column align-items-center justify-content-start">
                   <div class="charity-logo d-flex align-items-center justify-content-center mb-4">
                      <img src="/assets/images/charities/clean-air-task-force.png" class="img-fluid"
                         alt="Clean Air Task Force" />
@@ -90,7 +107,7 @@
                      charities in the world.</p>
                </div>
                <!-- New Orleans Musicians' Clinic -->
-               <div class="col-md-6 d-flex flex-column align-items-center justify-content-start">
+               <div class="col-md-4 d-flex flex-column align-items-center justify-content-start">
                   <div class="charity-logo d-flex align-items-center justify-content-center mb-4">
                      <img src="/assets/images/charities/new-orleans-musicians-clinic.png" class="img-fluid"
                         alt="New Orleans Musicians' Clinic" />
@@ -102,6 +119,18 @@
                      and mental-health care to the musicians and culture-bearers who keep New Orleans' living traditions
                      alive. Since 1998 it has kept thousands of working artists healthy and performing, using
                      music-as-medicine to improve the health of the whole community.</p>
+               </div>
+               <!-- GiveRadar -->
+               <div class="col-md-4 d-flex flex-column align-items-center justify-content-start">
+                  <div class="charity-logo d-flex align-items-center justify-content-center gap-3 mb-4">
+                     <img src="/assets/images/charities/giveradar.png" class="img-fluid" alt="GiveRadar" />
+                     <span class="charity-logo-text">GiveRadar</span>
+                  </div>
+                  <a class="btn btn-lg btn-success charity-donate px-4 mb-4" href="https://giveradar.com/"
+                     role="button">Find a charity near you</a>
+                  <p class="col-lg-10 mb-0">GiveRadar helps you discover and compare charities so you can support a
+                     cause that matters to you. Search by location or area of focus to find reputable local and global
+                     organizations, and give directly to the ones you choose.</p>
                </div>
             </div>
          </section>
