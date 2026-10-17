@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="Support charities suggested by the Transmission maintainer team, or find a charity near you with GiveRadar">
+   <meta name="description" content="Donate to The Transmission Team, or support a charity suggested by the Transmission maintainer team">
    <title>Transmission | Donate</title>
    <!-- Bootstrap core CSS -->
    <link href="/assets/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -46,6 +46,24 @@
          min-width: 18rem;
       }
    </style>
+   <script type="application/ld+json">
+      {
+         "@context": "http://schema.org",
+         "@type": "SoftwareApplication",
+         "applicationCategory": "MultimediaApplication",
+         "name": "Transmission",
+         "description": "A Fast, Easy and Free Bittorrent Client For Mac, Windows and Linux",
+         "image": "/assets/images/Transmission_icon.png",
+         "screenshot": ["/assets/images/homepage/carousel_homepage/screenshot_mac_full_window.png", "/assets/images/homepage/carousel_homepage/screenshot_windows.png", "/assets/images/homepage/carousel_homepage/screenshot_linux.png"],
+         "url": "transmissionbt.com",
+         "operatingSystem": ["macOS", "Windows", "Linux", "Unix"],
+         "softwareVersion": ["4.1.3"],
+         "offers": {
+            "@type": "Offer",
+            "price": "0"
+         }
+      }
+   </script>
 </head>
 
 <body>
@@ -80,17 +98,89 @@
    </header>
    <main id="content">
       <div class="container px-4 py-5">
-         <!-- Charities -->
-         <section class="py-5">
-            <!-- Why these charities -->
-            <div class="row justify-content-center text-center mb-5">
-               <div class="col-lg-8">
-                  <p class="lead mb-0">Thank you for thinking of donating!
-                     Please consider these two charities below that have been suggested by
-                     members of the Transmission maintainer team, or use GiveRadar to find
-                     a charity near you.</p>
+         <h1 class="display-5 fw-bold">Donate to The Transmission Project</h1>
+         <h3 class="mb-3">Transmission is free, but costs us money and time to produce, support, and distribute. This gift to the developers would demonstrate your appreciation of this software and help its future development. If you'd rather support a cause, we've also suggested <a href="#charities">a few charities below</a>.
+         </h3>
+         <section class="col-md-6 offset-md-3 text-center pt-4">
+            <div class="card p-5">
+               <h4 class="card-title">All money goes directly to the Transmission developers.</h4>
+               <div class="paypal">
+                  <div class="mb-4 mt-4 card-logos">
+                     <img src="/assets/images/card_logos/payment_logos.svg" class="img-fluid" alt="PayPal" />
+                     <br />
+                  </div>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="mb-4"
+                     aria-label="One Time Donation">
+                     <div>
+                        <input type="hidden" name="cmd" value="_xclick" />
+                        <input type="hidden" name="business" value="donations@transmissionbt.com" />
+                        <input type="hidden" name="item_name" value="Transmission BitTorrent Client" />
+                        <input type="hidden" name="item_number" value="transmission" />
+                        <input type="hidden" name="image_url"
+                           value="https://www.transmissionbt.com/images/transmission-74x74.png" />
+                        <input type="hidden" name="no_shipping" value="1" />
+                        <input type="hidden" name="return" value="https://www.transmissionbt.com" />
+                        <input type="hidden" name="cancel_return" value="https://www.transmissionbt.com" />
+                        <input type="hidden" name="cn" value="Feature Requests" />
+                        <input type="hidden" name="currency_code" value="USD" />
+                        <input type="hidden" name="tax" value="0" />
+                        <select aria-label="Donation Amount" class="form-select form-select-lg" name="amount">
+                           <option value="5.00">$5</option>
+                           <option value="10.00">$10</option>
+                           <option value="15.00">$15</option>
+                           <option value="20.00" selected="selected">$20</option>
+                           <option value="25.00">$25</option>
+                           <option value="30.00">$30</option>
+                           <option value="50.00">$50</option>
+                           <option value="100.00">$100</option>
+                           <option value="">Other</option>
+                        </select>
+                        <button type="submit" name="submit" value="Donate Once"
+                           class="btn btn-lg btn-danger mt-2">Donate</button>
+                     </div>
+                  </form>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" aria-label="Donate Monthly">
+                     <div>
+                        <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+                        <input type="hidden" name="business" value="donations@transmissionbt.com" />
+                        <input type="hidden" name="item_name" value="Transmission BitTorrent Client" />
+                        <input type="hidden" name="item_number" value="transmission" />
+                        <input type="hidden" name="image_url"
+                           value="https://www.transmissionbt.com/images/transmission-74x74.png" />
+                        <input type="hidden" name="no_shipping" value="1" />
+                        <input type="hidden" name="return" value="https://www.transmissionbt.com" />
+                        <input type="hidden" name="cancel_return" value="https://www.transmissionbt.com" />
+                        <input type="hidden" name="no_note" value="1" />
+                        <input type="hidden" name="currency_code" value="USD" />
+                        <select aria-label="Monthly Donation Amount" class="form-select form-select-lg" name="a3">
+                           <option value="3.00">$3</option>
+                           <option value="5.00" selected="selected">$5</option>
+                           <option value="10.00">$10</option>
+                           <option value="15.00">$15</option>
+                           <option value="20.00">$20</option>
+                           <option value="25.00">$25</option>
+                        </select>
+                        <input type="hidden" name="p3" value="1" />
+                        <input type="hidden" name="t3" value="M" />
+                        <input type="hidden" name="src" value="1" />
+                        <input type="hidden" name="sra" value="1" />
+                        <input type="hidden" name="srt" value="12" />
+                        <button type="submit" name="submit" value="Donate Monthly"
+                           class="btn btn-lg btn-danger mt-2">Donate Monthly</button>
+                     </div>
+                  </form>
+                  <br /> You can cancel a monthly PayPal donation <a
+                     href="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&amp;alias=donations@transmissionbt.com">here</a>.
                </div>
             </div>
+         </section>
+
+         <!-- Charities -->
+         <section id="charities" class="py-5 mt-4">
+            <h2 class="display-5 fw-bold mb-3">Prefer to give to a charity instead?</h2>
+            <h3 class="mb-5">If you'd rather your donation go to a cause, consider one of these charities
+               suggested by members of the Transmission maintainer team, or use GiveRadar to find a charity
+               near you.</h3>
             <div class="row g-5 justify-content-center text-center">
                <!-- Clean Air Task Force -->
                <div class="col-md-4 d-flex flex-column align-items-center justify-content-start">
@@ -133,11 +223,6 @@
                      organizations, and give directly to the ones you choose.</p>
                </div>
             </div>
-         </section>
-
-         <!-- Transmission opt-out -->
-         <section class="text-center pt-4 mt-5">
-            <p class="text-muted small mt-5 mb-0">If you want to donate to Transmission, donations@transmissionbt.com is PayPal account used for processing online donations made by Transmission users.</p>
          </section>
       </div>
    </main>
