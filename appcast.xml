@@ -17,7 +17,7 @@
       	<pubDate>TODO: set pubDate for 4.1.4 release</pubDate>
       	<enclosure
       	url="https://github.com/transmission/transmission/releases/download/4.1.4/Transmission-4.1.4.dmg"
-      	sparkle:dsaSignature="TODO: sign Transmission-4.1.4.dmg with appcast/sparkle_sign_update.rb"
+      	sparkle:edSignature="TODO: sign Transmission-4.1.4.dmg with Sparkle's sign_update (EdDSA, see transmission/transmission#9065)"
       	type="application/octet-stream"/>
       	<sparkle:minimumSystemVersion>12.0.0</sparkle:minimumSystemVersion>
     </item>
