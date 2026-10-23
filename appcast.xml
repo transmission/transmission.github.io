@@ -26,7 +26,7 @@
     <item>
       	<title>Transmission 4.1.3</title>
       	<link>https://transmissionbt.com</link>
-      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes.html</sparkle:releaseNotesLink>
+      	<sparkle:releaseNotesLink>https://transmissionbt.com/appcast/releasenotes110.html</sparkle:releaseNotesLink>
       	<sparkle:fullReleaseNotesLink>https://github.com/transmission/transmission/releases</sparkle:fullReleaseNotesLink>
       	<sparkle:version>14718.1.399</sparkle:version>
       	<sparkle:shortVersionString>4.1.3</sparkle:shortVersionString>
